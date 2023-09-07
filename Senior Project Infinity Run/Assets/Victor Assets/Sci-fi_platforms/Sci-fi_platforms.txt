@@ -1,0 +1,4 @@
+Low poly modular sci-fi platforms from Coostvenay.
+This package consists of 14 parts.
+The maximum texture size of 1024x1024.
+Used "bumped specular" shaders.
