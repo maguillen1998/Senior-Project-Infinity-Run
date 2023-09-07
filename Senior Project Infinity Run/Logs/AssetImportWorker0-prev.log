@@ -1,0 +1,891 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16245 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+B:\Unity\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57500
+Successfully changed project path to: E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
+E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 231.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path B:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 980 Ti (ID=0x17c8)
+    Vendor:   NVIDIA
+    VRAM:     6092 MB
+    Driver:   31.0.15.3667
+Initialize mono
+Mono path[0] = 'B:/Unity/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'B:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'B:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: B:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008984 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 207.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.405 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1406ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1011ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (604ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (207ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (297ms)
+				ProcessInitializeOnLoadMethodAttributes (77ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013773 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 148.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1779ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1481ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (373ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (821ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (133ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5530 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (1.3 MB). Loaded Objects now: 5965.
+Memory consumption went from 216.8 MB to 215.6 MB.
+Total: 5.826800 ms (FindLiveObjects: 0.684200 ms CreateObjectMapping: 0.319900 ms MarkObjects: 4.015800 ms  DeleteObjects: 0.805600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7371.385769 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(8cbbbed6b8b83dd4795097bc7dcaa744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(8cbbbed6b8b83dd4795097bc7dcaa744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c173590ae5afb82c09e2fa172729c3d') in 0.065283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.670132 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.009603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.823388 seconds.
+  path: Assets/Test Prefab.prefab
+  artifactKey: Guid(e60105039ee89ff4ebb0536f07e52308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Prefab.prefab using Guid(e60105039ee89ff4ebb0536f07e52308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3207c36d6ceb6125ee0517aa16e824f0') in 0.029592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3033.257633 seconds.
+  path: Assets/Victor Assets/Standard Assets
+  artifactKey: Guid(9a66f5e6aa8a8904ca07614b01617732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets using Guid(9a66f5e6aa8a8904ca07614b01617732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4137ac27b9ddb33f135db15e9c39d49d') in 0.012043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.966107 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D
+  artifactKey: Guid(1d8bb7944760b84429768013f749b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D using Guid(1d8bb7944760b84429768013f749b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44bf48bc9182299a3d3ab5236359acc') in 0.011343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.464048 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Animations
+  artifactKey: Guid(d8134e4dd9a11c6468abfb1683315eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Animations using Guid(d8134e4dd9a11c6468abfb1683315eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d4d233cd0070df8c6b6d5a8bd4dc1b') in 0.013314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.814876 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Animations/RobotBoyCrouch.anim
+  artifactKey: Guid(19bf9c5d4c01a864baffb3ac0dc54a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Animations/RobotBoyCrouch.anim using Guid(19bf9c5d4c01a864baffb3ac0dc54a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a742521c15484eacf156d7d7fe3827f') in 0.013655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.338424 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Animator/2dCharacterAnimator.controller
+  artifactKey: Guid(5fc43f0c4b413534ba12c51c0e5e5f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Animator/2dCharacterAnimator.controller using Guid(5fc43f0c4b413534ba12c51c0e5e5f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e020a6dcbc19a0a131122eea33336e2b') in 0.023276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.522050 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Materials/SpriteLit.mat
+  artifactKey: Guid(272ba847f100d4251bb8260575189042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Materials/SpriteLit.mat using Guid(272ba847f100d4251bb8260575189042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757c1cf638fb3ed58838aa3fcc1a0f9b') in 0.293629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.099819 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/BouncyBox.physicsMaterial2D
+  artifactKey: Guid(8be6341e1ce3f4cec9902bc34f72d20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/BouncyBox.physicsMaterial2D using Guid(8be6341e1ce3f4cec9902bc34f72d20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fd80b0390d1d4f2b1efa3a890ccefc') in 0.013529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/Sticky.physicsMaterial2D
+  artifactKey: Guid(0cb77231a430b454fb792ff7ffcc3943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/Sticky.physicsMaterial2D using Guid(0cb77231a430b454fb792ff7ffcc3943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed958dcfb3192bebb49e971fad54bbd') in 0.008772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/Slippery.physicsMaterial2D
+  artifactKey: Guid(3626fe8e008014f6bbd19bb72937b311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/PhysicsMaterials/Slippery.physicsMaterial2D using Guid(3626fe8e008014f6bbd19bb72937b311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7564b49455abffa2587cfdf5c8e692f8') in 0.008943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.122218 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/CharacterRobotBoy.prefab
+  artifactKey: Guid(87a2357765801c34292d6718d8b4d770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/CharacterRobotBoy.prefab using Guid(87a2357765801c34292d6718d8b4d770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6b95ad69d07411b95b0af67bd40ab9') in 0.094973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform04x01.prefab
+  artifactKey: Guid(57977547c59abb546bbb1501e3c417db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform04x01.prefab using Guid(57977547c59abb546bbb1501e3c417db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75bc55735664ccc4e366d61a99f97e2') in 0.022241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/CollisionSlider.prefab
+  artifactKey: Guid(2a71c12ae885e4f80b5144a4652bbeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/CollisionSlider.prefab using Guid(2a71c12ae885e4f80b5144a4652bbeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec5301430fe87f0e1ce892524d7b6a5') in 0.014274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/ExtentsLeft.prefab
+  artifactKey: Guid(0eb16b4b3e362ef4f97494dd0e686c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/ExtentsLeft.prefab using Guid(0eb16b4b3e362ef4f97494dd0e686c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0419ceb9ad39ecddb022e56e9ac564c7') in 0.022094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform12x01.prefab
+  artifactKey: Guid(0ce4cbc241d3aca4da0b94a0ffa0d51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform12x01.prefab using Guid(0ce4cbc241d3aca4da0b94a0ffa0d51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb30a476f1d4262eb8eebd83592cc36e') in 0.020906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Killzone.prefab
+  artifactKey: Guid(a038b284634e29f4aaf058814aa61a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Killzone.prefab using Guid(a038b284634e29f4aaf058814aa61a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b0149155f11d83febb19f124f7162d') in 0.015008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform36x01.prefab
+  artifactKey: Guid(d024aaa09f4080d448d16f62d1a97b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform36x01.prefab using Guid(d024aaa09f4080d448d16f62d1a97b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701a534862e56feb056787ef8f22e357') in 0.021583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform08x01.prefab
+  artifactKey: Guid(674c23718320e9d498cdad2a5bcd576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform08x01.prefab using Guid(674c23718320e9d498cdad2a5bcd576a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aed25e70abd466d3fde6947299e4af8') in 0.020589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/CratePink.prefab
+  artifactKey: Guid(18fcd494ab71841d695135246693eb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/CratePink.prefab using Guid(18fcd494ab71841d695135246693eb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1c1fcaa92d97287376b7e13a367282') in 0.021375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/PlatformRamp.prefab
+  artifactKey: Guid(47d3e747b2e87de4c8358aaa436365ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/PlatformRamp.prefab using Guid(47d3e747b2e87de4c8358aaa436365ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e96bc3bebb9d2c8fd04d6512a1dfe7d') in 0.020436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform16x01.prefab
+  artifactKey: Guid(ba4eef1c1bb56b444b143beb8d3e30d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/Platform16x01.prefab using Guid(ba4eef1c1bb56b444b143beb8d3e30d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff759e740013de8d0121d2ffa86f3a0') in 0.021602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Prefabs/ExtentsRight.prefab
+  artifactKey: Guid(b241b59d6a89aff4fbf0bce77e644761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Prefabs/ExtentsRight.prefab using Guid(b241b59d6a89aff4fbf0bce77e644761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c692a38f4ec34d09f9223f36a0e27c58') in 0.020356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.849532 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/BackgroundGreyGridSprite.png
+  artifactKey: Guid(cbbabe9e292f5604897926494bb38fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/BackgroundGreyGridSprite.png using Guid(cbbabe9e292f5604897926494bb38fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fee35562a7e8482cb3cafb53673b30e') in 0.066096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/PlatformWhiteSprite.png
+  artifactKey: Guid(d90a8faf6fb9540b084ef2825cc3a5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/PlatformWhiteSprite.png using Guid(d90a8faf6fb9540b084ef2825cc3a5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008e0a7de590bf22d187538adfc367fc') in 0.031092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png
+  artifactKey: Guid(f45a39483cf4f914a816af821c9262bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png using Guid(f45a39483cf4f914a816af821c9262bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325cd2e21dffc9e1330a7cc0624af7d9') in 0.191571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png
+  artifactKey: Guid(9e1a2edf6149977479db158e4fbf9671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png using Guid(9e1a2edf6149977479db158e4fbf9671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa0dbc70998cabd1db5982ef59757c2') in 0.277148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyRollSprite.png
+  artifactKey: Guid(fc67a9002ed4034419f91d0d85bd6b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyRollSprite.png using Guid(fc67a9002ed4034419f91d0d85bd6b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc6a977e8f6a2f3412797437c23a9d6') in 0.164469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png
+  artifactKey: Guid(feda0c18015b3284cabbc0da85254f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png using Guid(feda0c18015b3284cabbc0da85254f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d86fce2c12ed179ebe7d94fc2084eb5') in 0.172331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png
+  artifactKey: Guid(8fb98a6035269e64a998f9b56828fc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png using Guid(8fb98a6035269e64a998f9b56828fc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d174b66494aa3d9a4d5deaad1a0120') in 0.304187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png
+  artifactKey: Guid(12ef7cbdfe0e143fa858a324456c8979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png using Guid(12ef7cbdfe0e143fa858a324456c8979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fef3e48066ad77f577e7fea74c36151') in 0.030104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png
+  artifactKey: Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png using Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459f729a65052c04fbaeb5b6ba1c5c46') in 0.035935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png
+  artifactKey: Guid(d40c191aa46654db7a426d6a1fa3aa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png using Guid(d40c191aa46654db7a426d6a1fa3aa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f90c437687472403121e4a870a63dab') in 0.261072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyRunSprite.png
+  artifactKey: Guid(803baf1ea73913f46b25e07d0a79df22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Standard Assets/2D/Sprites/RobotBoyRunSprite.png using Guid(803baf1ea73913f46b25e07d0a79df22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9324ab04a6e9393e06721c0f602c0135') in 0.190098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.249773 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Clean_wall.mat
+  artifactKey: Guid(cb0b23f77657e6c49aa761a72043a0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Clean_wall.mat using Guid(cb0b23f77657e6c49aa761a72043a0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc0eb5e7d5ee20c4c36efdb29ab2298') in 0.067086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Clean_wall2.mat
+  artifactKey: Guid(55cd0c6a47788c645976d6ea504b0171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Clean_wall2.mat using Guid(55cd0c6a47788c645976d6ea504b0171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d20a7fec08fc5747f39f9e93b18d46') in 0.021955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Walkway1.mat
+  artifactKey: Guid(111e0902845233e4b88d3bd2a0bc9a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Platform Demo/Materials/Walkway1.mat using Guid(111e0902845233e4b88d3bd2a0bc9a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5beee83adb430a962203fb4fdcf5bf32') in 0.021146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.200073 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/BlueScrap2.png
+  artifactKey: Guid(731d4fa1d5bea614690dd17f806dccbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/BlueScrap2.png using Guid(731d4fa1d5bea614690dd17f806dccbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63fce01c9012e7009df132b1da7a08b') in 0.033884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap1.png
+  artifactKey: Guid(a6592c1e276979b4381d4956c093177d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap1.png using Guid(a6592c1e276979b4381d4956c093177d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e385fe8af6609bd1ed0b48093cb5af65') in 0.031857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/BlueScrap3.png
+  artifactKey: Guid(932dd1757fcb1714c9ef6fc7ce83d87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/BlueScrap3.png using Guid(932dd1757fcb1714c9ef6fc7ce83d87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e24a73110bc5b67f59c53ad99b74758') in 0.029954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds2.png
+  artifactKey: Guid(29d3e4f8f0785814f984e3269945bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds2.png using Guid(29d3e4f8f0785814f984e3269945bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26330b4622c39fc34aa87102010da6c9') in 0.081375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap3.png
+  artifactKey: Guid(d523ed6f81141dc4f96b3ffef2b460f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap3.png using Guid(d523ed6f81141dc4f96b3ffef2b460f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5558a2a3e407f010dd5f8b6fd4790797') in 0.030625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds5.png
+  artifactKey: Guid(8486a591fc1d48a47bc0359f11b2226d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds5.png using Guid(8486a591fc1d48a47bc0359f11b2226d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6338921c11b7cce88df33f60022d20e') in 0.090309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_11.png
+  artifactKey: Guid(f712b26115ee5144cba51e469a2d2c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_11.png using Guid(f712b26115ee5144cba51e469a2d2c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9700e9561df610d33409116fed1f44d') in 0.089538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Wood_Bridge.png
+  artifactKey: Guid(ce19fcb5485d93641a57e188acabd5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Wood_Bridge.png using Guid(ce19fcb5485d93641a57e188acabd5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932a4f910de7d15f56e68fa99a638c26') in 0.043907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_5.png
+  artifactKey: Guid(e025ff4490bfa9f4eb281d9225fcb73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_5.png using Guid(e025ff4490bfa9f4eb281d9225fcb73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62d847c351da21a35270707b0870b76') in 0.037710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap2.png
+  artifactKey: Guid(3e9220f16bc29744cabd1b546e9a1a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap2.png using Guid(3e9220f16bc29744cabd1b546e9a1a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce655b0f705567084f8720fa98cd69f') in 0.030485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_6.png
+  artifactKey: Guid(ae128590d295746479cc1e612c97bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_6.png using Guid(ae128590d295746479cc1e612c97bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bcc771d5fa455691bd47bc5373f162f') in 0.033328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds4.png
+  artifactKey: Guid(8acb50888b826514c893bf5411b411f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds4.png using Guid(8acb50888b826514c893bf5411b411f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfea66889140ff01361f8c32ff22c543') in 0.089848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap4.png.png
+  artifactKey: Guid(1d75d9b8100bc1c4ca960966fbfd86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Scrap4.png.png using Guid(1d75d9b8100bc1c4ca960966fbfd86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d5f5202177713edc79770f73b19f42') in 0.033216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds1.png
+  artifactKey: Guid(e12ee0d963bfc904c996eada4a098246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds1.png using Guid(e12ee0d963bfc904c996eada4a098246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76c8e6e2f048aa202d87e75d25a50ae') in 0.116085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Rubble.png
+  artifactKey: Guid(a4b4b9353f1b53846892f52a0c9e5451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Rubble.png using Guid(a4b4b9353f1b53846892f52a0c9e5451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e861c3208f754510cd73cbe411b7e64a') in 0.031282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds3.png
+  artifactKey: Guid(731f6439668bc6445b9287d7617be2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Clouds3.png using Guid(731f6439668bc6445b9287d7617be2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26413ca751421506eca5c8dc64af739') in 0.092125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_7.png
+  artifactKey: Guid(caa64b761dfb3f8479fb199c64bcda19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Gizmo_7.png using Guid(caa64b761dfb3f8479fb199c64bcda19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6dad4303e4ffb4e4c55b5104541ec9e') in 0.084775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Wood_Fence.png
+  artifactKey: Guid(1baa0ba38d6bb44478179b8fd9ccd9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Wood_Fence.png using Guid(1baa0ba38d6bb44478179b8fd9ccd9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d4fb4be1d88d5649712f8f6f1262d2') in 0.037004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Rubble1.png
+  artifactKey: Guid(5c1d1d88ae8c92740996d2b095838914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Prop Demo/Rubble1.png using Guid(5c1d1d88ae8c92740996d2b095838914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c9d1350700bd53e3507153e80a789f') in 0.027222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.427771 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Gray_CurvePipe.png
+  artifactKey: Guid(09083f9dcbe253c44a555782bcf3f23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Gray_CurvePipe.png using Guid(09083f9dcbe253c44a555782bcf3f23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7ef0b4c39a2f73637f6f99c26969ff') in 0.030426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GrayShort.png
+  artifactKey: Guid(2e16f562b4cfa9048b5743e8461ca02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GrayShort.png using Guid(2e16f562b4cfa9048b5743e8461ca02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45852c61a86ef28b1d9da9077ce6aa43') in 0.032262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_Gray.png
+  artifactKey: Guid(5161061fb887f78408a1f8af5694445b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_Gray.png using Guid(5161061fb887f78408a1f8af5694445b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2339df3a3ed6067e65782b87a6f92c98') in 0.036420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GrayLong.png
+  artifactKey: Guid(ec5fb03e68d02094993bb99609b31caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GrayLong.png using Guid(ec5fb03e68d02094993bb99609b31caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0689addba31c45a42a3b998166cb4260') in 0.031687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GreenShort.png
+  artifactKey: Guid(1549f227950df374792293dc1b266216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Pipes Demo/Pipe_GreenShort.png using Guid(1549f227950df374792293dc1b266216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b90d687f5b5ea7d0fc428e0df0aa7752') in 0.031022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.458449 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_1.png
+  artifactKey: Guid(60c01532531813f4fa9cac3c372eddf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_1.png using Guid(60c01532531813f4fa9cac3c372eddf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d39482b59bd67c1462dbb4e23fe766') in 0.078713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Forest_Hill2.png
+  artifactKey: Guid(03e9913556fcce548a537a1b44db2ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Forest_Hill2.png using Guid(03e9913556fcce548a537a1b44db2ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0b835179f9f0ddc25ef0bb87491c69') in 0.082579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_DirtGrass.png
+  artifactKey: Guid(a3f14c831e23ced468318e09bae2eec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_DirtGrass.png using Guid(a3f14c831e23ced468318e09bae2eec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8bfe256e61b4e81b82e7b881115e1e') in 0.054565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_2.png
+  artifactKey: Guid(0af6ede767f6fee4bad2f187b5144aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_2.png using Guid(0af6ede767f6fee4bad2f187b5144aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0cb02d28c10390af6d664393c792d9') in 0.069745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Grassy.png
+  artifactKey: Guid(98d6af71cba1e4a4c8fc5fbdf0c1e911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Grassy.png using Guid(98d6af71cba1e4a4c8fc5fbdf0c1e911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3ba062ba852412fa82d6de45c26ca1') in 0.051284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Machine_Background2.png
+  artifactKey: Guid(fbce76eacab8ace4ea4dd1104d1fb64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Machine_Background2.png using Guid(fbce76eacab8ace4ea4dd1104d1fb64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d373afc9fc437645e8107814d25cc4') in 0.079286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_Cloud2.png
+  artifactKey: Guid(9896797d3190fc144ab3fac3babddf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Background_Cloud2.png using Guid(9896797d3190fc144ab3fac3babddf58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b979713ca569126581e4a1a092b9f62c') in 0.064787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Water.png
+  artifactKey: Guid(1c28dd2faa593364dbf9ce69ae7fd4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Water.png using Guid(1c28dd2faa593364dbf9ce69ae7fd4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303b121601ad74c5b309ce017a2ede11') in 0.047523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Dirt.png
+  artifactKey: Guid(19a0db07bdfedb949abd8e206c4e44aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Ground_Dirt.png using Guid(19a0db07bdfedb949abd8e206c4e44aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8890492bda7d1ef8ceb17db2498247') in 0.054110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Forest_Hill1.png
+  artifactKey: Guid(fb1ba31cf1b53094caf4aaa28622f367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Scifi Art Demo Pack/Background Demo/Forest_Hill1.png using Guid(fb1ba31cf1b53094caf4aaa28622f367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ee3ea823796dce624be88edb8251d1') in 0.069273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.329549 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Border.mat
+  artifactKey: Guid(c3339d8d7f76c5f449b998bdc33852e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Border.mat using Guid(c3339d8d7f76c5f449b998bdc33852e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b8d292802b80bc34e0401478c451da') in 0.055565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_hex.mat
+  artifactKey: Guid(4426d6ce2ae336a408e80bc8a08ba184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_hex.mat using Guid(4426d6ce2ae336a408e80bc8a08ba184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c9901fefdb08aba50b5bdbd43de2ea') in 0.018781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Border_diffuse.mat
+  artifactKey: Guid(e77cda24bbf6db040bf5b65e6cf50976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Border_diffuse.mat using Guid(e77cda24bbf6db040bf5b65e6cf50976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8744c08e44c23982967041b35d697d') in 0.021481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Hexagon.mat
+  artifactKey: Guid(53c035aad868fef4fb5a638e962fbbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Hexagon.mat using Guid(53c035aad868fef4fb5a638e962fbbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20942414b589080a1c9f8605da9a78df') in 0.022267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_monolith.mat
+  artifactKey: Guid(faba5cff1158e2e4eb93fa326ddbf902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_monolith.mat using Guid(faba5cff1158e2e4eb93fa326ddbf902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbf5b130dcf96a58a55927471308c1d') in 0.022789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_hex_diffuse.mat
+  artifactKey: Guid(a85490c9f95c80d44a511dc10aa4388b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Platform_hex_diffuse.mat using Guid(a85490c9f95c80d44a511dc10aa4388b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f0bcd898cc8b797c89c577019823b0') in 0.187332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Fence_diffuse.mat
+  artifactKey: Guid(b74a0bb4553fd4246b9c024cc70d7bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Fence_diffuse.mat using Guid(b74a0bb4553fd4246b9c024cc70d7bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbd0e04aeed9d3e5d260b109288cccc') in 0.018998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Fence.mat
+  artifactKey: Guid(a9719f68033a74648a24a6497338474c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Fence.mat using Guid(a9719f68033a74648a24a6497338474c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e409f7b388d7c0d415ce3010a368d3d') in 0.056986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Materials/Demo_ground.mat
+  artifactKey: Guid(a23de8ce46fc4de41b9914de71500651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Materials/Demo_ground.mat using Guid(a23de8ce46fc4de41b9914de71500651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796d17dc1ab98488fbc02f0aebfb37ad') in 0.019808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.512082 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Border.FBX
+  artifactKey: Guid(21f5492bf55e866408a698ca742d92b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Border.FBX using Guid(21f5492bf55e866408a698ca742d92b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dcb2c42ee0878f0cf2aef180cacd092') in 0.392257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Carcass.FBX
+  artifactKey: Guid(70c2937e0df5c6d4ead4714d4f1c156d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Carcass.FBX using Guid(70c2937e0df5c6d4ead4714d4f1c156d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc85ea98c8b4f064de0c002c673b2c70') in 0.029633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_1.FBX
+  artifactKey: Guid(07b9bc5e386c3b24a904917d21fdac75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_1.FBX using Guid(07b9bc5e386c3b24a904917d21fdac75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68510923786e4939f6f981ca5a754e45') in 0.029980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_2.FBX
+  artifactKey: Guid(bbd47c477569737439e072d8444ce60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_2.FBX using Guid(bbd47c477569737439e072d8444ce60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65f5b65acebfd4e7735586e3d2105af') in 0.026689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Platform_3x6.FBX
+  artifactKey: Guid(7bb3ddec2e28de34ab98e64f65e83231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Platform_3x6.FBX using Guid(7bb3ddec2e28de34ab98e64f65e83231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f7e33feb8e1c0fca376fef22d72bc1') in 0.025874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Cap.FBX
+  artifactKey: Guid(f0753e73d4fbf02419e5502043ae25f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Cap.FBX using Guid(f0753e73d4fbf02419e5502043ae25f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef46f1d2d6bb52c6bd10b70cefcc4d9') in 0.027275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Fence.prefab
+  artifactKey: Guid(67b474a0fd98587499d67ca934fe1813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Fence.prefab using Guid(67b474a0fd98587499d67ca934fe1813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8816f2802649e86fcd273b04fd70ed') in 0.017844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Pillar.FBX
+  artifactKey: Guid(054393e05b4b37e4facaa9b4cf32fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Pillar.FBX using Guid(054393e05b4b37e4facaa9b4cf32fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ee0175c1d6f37e4794a6d9bc2a0a96') in 0.027047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Ring.FBX
+  artifactKey: Guid(8a00d3675b704b24a945c12edcc8c492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Ring.FBX using Guid(8a00d3675b704b24a945c12edcc8c492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387096d0f1324de1c368d64a7b6510f4') in 0.028318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_3.FBX
+  artifactKey: Guid(a2ae65d58bf3e644393baa198f5d13ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Cable_3.FBX using Guid(a2ae65d58bf3e644393baa198f5d13ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18999e7e738d26ad0396490aa6879f9b') in 0.029524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Hexagon.FBX
+  artifactKey: Guid(c98add50e7c10a7419222a70b903bbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Hexagon.FBX using Guid(c98add50e7c10a7419222a70b903bbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bb2955f2ca0626efc4c4d4ab462ad5') in 0.026226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Meshes/Platform_1x3.FBX
+  artifactKey: Guid(0e3408f18fba635489805926b7135a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Meshes/Platform_1x3.FBX using Guid(0e3408f18fba635489805926b7135a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b598d4b31ea74c8fd2af48ed0f3ac3') in 0.028748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.471700 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Border.prefab
+  artifactKey: Guid(5b544562b167ab14d9fa558760b4ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Border.prefab using Guid(5b544562b167ab14d9fa558760b4ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03afd2f6eb5af36b98002b441de08117') in 0.017517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Carcass.prefab
+  artifactKey: Guid(a59b9d7f7a6895445b0534030dd16467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Carcass.prefab using Guid(a59b9d7f7a6895445b0534030dd16467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9ac140bc89d161b2527650ae780ad3') in 0.017985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_hex_1x3.prefab
+  artifactKey: Guid(1ee4ccc59a508674bb79b6f867ed4687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_hex_1x3.prefab using Guid(1ee4ccc59a508674bb79b6f867ed4687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d5d7c6dc9113a5c264cb6502506975') in 0.022677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_3.prefab
+  artifactKey: Guid(3faab24fe9e1f874497a62a46e1f2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_3.prefab using Guid(3faab24fe9e1f874497a62a46e1f2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de6220f638797fc04dc68989795eeb8') in 0.018891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_hex_3x6.prefab
+  artifactKey: Guid(9915687ab52b2144093d63a1909be125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_hex_3x6.prefab using Guid(9915687ab52b2144093d63a1909be125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bffc6bba6d1d4686120b13e3c050dd1') in 0.022863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Ring.prefab
+  artifactKey: Guid(e7522e02b24d04c4b9d714e2944353c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Ring.prefab using Guid(e7522e02b24d04c4b9d714e2944353c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3191df86da92522b0d5ce2ce1bd0a75a') in 0.019780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Hexagon.prefab
+  artifactKey: Guid(a5d0456465c74244faf8203ad45e3943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Hexagon.prefab using Guid(a5d0456465c74244faf8203ad45e3943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c37d0307cc170f84ea765475c08158') in 0.019659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_monolith_1x3.prefab
+  artifactKey: Guid(c84af68756c8343419b5726e3a0f54af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_monolith_1x3.prefab using Guid(c84af68756c8343419b5726e3a0f54af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9868ee0aabf5408684d358a3a5d38234') in 0.021312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_monolith_3x6.prefab
+  artifactKey: Guid(c7abd1488502dd24b9bbbc0097a21233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Platform_monolith_3x6.prefab using Guid(c7abd1488502dd24b9bbbc0097a21233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c7a2c92ddc134bdda90b0bc9c78257') in 0.021990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Fence.prefab
+  artifactKey: Guid(ad26735003b9ada4a9286dbeb4ae8734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Fence.prefab using Guid(ad26735003b9ada4a9286dbeb4ae8734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583b5bae62d4bb8d4eb83aa5d9181fb3') in 0.018873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Pillar.prefab
+  artifactKey: Guid(5d63d4c3896f453428ce16e67c82e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Pillar.prefab using Guid(5d63d4c3896f453428ce16e67c82e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defc8a3deffe6ee2808e2e5110f3f214') in 0.018519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cap.prefab
+  artifactKey: Guid(61710f45624fe464d848fe79f7979a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cap.prefab using Guid(61710f45624fe464d848fe79f7979a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a884de859eab36afce7d941d804c4a7') in 0.018444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_2.prefab
+  artifactKey: Guid(1fa9891e64652a94fb63872d1aa0d4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_2.prefab using Guid(1fa9891e64652a94fb63872d1aa0d4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5f96e774f70319baa43f29ff83e120') in 0.017323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_1.prefab
+  artifactKey: Guid(42a244a61fa4fe24eb9dd10047b2775f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Prefabs/Cable_1.prefab using Guid(42a244a61fa4fe24eb9dd10047b2775f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c040c0d3412fdf07af22851653276e6c') in 0.016987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.989543 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Border_bump.psd
+  artifactKey: Guid(4835cd3c163dd65488ebf7c652d390f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Border_bump.psd using Guid(4835cd3c163dd65488ebf7c652d390f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0225d0ed2c2b771d1501dd16a7d2c2c3') in 0.029126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_hex_diffuse.psd
+  artifactKey: Guid(6873d445cd2436847b3c3424d6dd93a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_hex_diffuse.psd using Guid(6873d445cd2436847b3c3424d6dd93a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98e2a6bc9c32149b698b87665d97d90') in 0.016674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Demo_ground_bump.tif
+  artifactKey: Guid(350eca90045505045beb4dd944e8f709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Demo_ground_bump.tif using Guid(350eca90045505045beb4dd944e8f709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ac4aa16d4458ab16a0587e6af70258') in 0.028819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Fence_bump.psd
+  artifactKey: Guid(8f72e9b0c4f654d43bf3b6a6a5345f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Fence_bump.psd using Guid(8f72e9b0c4f654d43bf3b6a6a5345f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12009f157f7d62113066fae27a7d3b51') in 0.019014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Hexagon_diffuse.psd
+  artifactKey: Guid(ae0c58e5d076f8a4185eb0bd24d4960c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Hexagon_diffuse.psd using Guid(ae0c58e5d076f8a4185eb0bd24d4960c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a2dca74fe5813c8c1c9fd8803d7e98') in 0.020329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000687 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Border_diffuse.psd
+  artifactKey: Guid(59a0e54c4a354f540ac8224677447ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Border_diffuse.psd using Guid(59a0e54c4a354f540ac8224677447ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95ba9ddabf29f2d690542eb123a5666') in 0.019132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Hexagon_bump.psd
+  artifactKey: Guid(dd662f782b7109f489933ce6c70ef5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Hexagon_bump.psd using Guid(dd662f782b7109f489933ce6c70ef5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4156d736d3ca32db9bee92afe82a20c') in 0.020580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Fence_diffuse.png
+  artifactKey: Guid(12cf65933aa09914280c976c9f4d9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Fence_diffuse.png using Guid(12cf65933aa09914280c976c9f4d9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df3cd11c4f889962f5f79efb9ce2d43') in 0.019155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_monolith_diffuse.psd
+  artifactKey: Guid(f275f1e59424f6a4795a4a86a0f38aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_monolith_diffuse.psd using Guid(f275f1e59424f6a4795a4a86a0f38aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31cfdb73012b1d51c2db4233de728c6') in 0.020452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_hex_bump.psd
+  artifactKey: Guid(02f624bf074313e48bf6d4ff60eee677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_hex_bump.psd using Guid(02f624bf074313e48bf6d4ff60eee677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9961aaabb970fbb3a7e4070f9196ec96') in 0.021388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Demo_ground_diffuse.tif
+  artifactKey: Guid(230bb5af77746ef43a2bd9289f500053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Demo_ground_diffuse.tif using Guid(230bb5af77746ef43a2bd9289f500053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '288c2e027f0cfabda63d90f515daa96d') in 0.019893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_monolith_bump.psd
+  artifactKey: Guid(a573bd90b03008147a97f9ffe62219e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/Sci-fi_platforms/Textures/Platform_monolith_bump.psd using Guid(a573bd90b03008147a97f9ffe62219e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4dbdf5b2d93e19a803a120df3e4f52') in 0.020187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.152876 seconds.
+  path: Assets/Victor Assets/home made sprites/lpc-doors-animated-1.png
+  artifactKey: Guid(c550885ce1b116d49bcc266d50f649ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/home made sprites/lpc-doors-animated-1.png using Guid(c550885ce1b116d49bcc266d50f649ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5284364506c0153cb0f7b34ed4edbfc') in 0.228943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Victor Assets/home made sprites/monster_skeleton_sword.gif
+  artifactKey: Guid(1be39d06d8920534ebcca0aa4f43f698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/home made sprites/monster_skeleton_sword.gif using Guid(1be39d06d8920534ebcca0aa4f43f698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b555648ae65a7647d8483ba15a69c0e') in 0.268196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Victor Assets/home made sprites/you_win.png
+  artifactKey: Guid(606a199048a5ee74e845e32e7315dec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victor Assets/home made sprites/you_win.png using Guid(606a199048a5ee74e845e32e7315dec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b80bb4fe40b9ffdaa1c81e87a9000b0') in 0.042647 seconds 
