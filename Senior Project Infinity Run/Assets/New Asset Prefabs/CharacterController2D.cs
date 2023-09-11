@@ -109,7 +109,7 @@ public class CharacterController2D : MonoBehaviour
         }
 
         //testing anims
-        myAnim.SetFloat("vSpeed", r2d.velocity.magnitude);
+        myAnim.SetFloat("vSpeed", Mathf.Abs(r2d.velocity.x));
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
 
