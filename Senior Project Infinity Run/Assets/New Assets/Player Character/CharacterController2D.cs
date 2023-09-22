@@ -7,12 +7,12 @@ using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
 {
-    //animator
     public Animator myAnim;
-    // Move player in 2D space
+    
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
+
     public Camera mainCamera;
 
     bool facingRight = true;
@@ -46,29 +46,32 @@ public class CharacterController2D : MonoBehaviour
     {
         
         // Movement controls
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
+        
+        if (Input.GetKey(KeyCode.A))
         {
-            moveDirection = Input.GetKey(KeyCode.A) ? -1 : 1;
+            moveDirection = -1;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            moveDirection = 1;
         }
         else
         {
-            if (isGrounded || r2d.velocity.magnitude < 0.01f)
-            {
-                moveDirection = 0;
-            }
+            moveDirection = 0;
         }
+        
 
         // Change facing direction
         if (moveDirection != 0)
         {
-            if (moveDirection > 0 && !facingRight)
+            if (moveDirection > 0)
             {
-                facingRight = true;
+                
                 t.localScale = new Vector3(Mathf.Abs(t.localScale.x), t.localScale.y, transform.localScale.z);
             }
-            if (moveDirection < 0 && facingRight)
+            if (moveDirection < 0)
             {
-                facingRight = false;
+               
                 t.localScale = new Vector3(-Mathf.Abs(t.localScale.x), t.localScale.y, t.localScale.z);
             }
         }
@@ -107,14 +110,15 @@ public class CharacterController2D : MonoBehaviour
                 }
             }
         }
+        
 
-        //testing anims
+        //Updating x-speed variable for the Animator
         myAnim.SetFloat("vSpeed", Mathf.Abs(r2d.velocity.x));
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
 
         // Simple debug
-        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
-        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(colliderRadius, 0, 0), isGrounded ? Color.green : Color.red);
+        //Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
+        //Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(colliderRadius, 0, 0), isGrounded ? Color.green : Color.red);
     }
 }
