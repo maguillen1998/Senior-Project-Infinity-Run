@@ -1843,7 +1843,6 @@ TextureImporter:
       Props_55: -951401473
       Props_56: -221471387
       Props_80: -984159418
-      Props_74: 749471957
       Props_26: 39038776
       Props_2: -487338941
       Props_70: 1614446161
@@ -1882,22 +1881,23 @@ TextureImporter:
       Props_1: 2142370919
       Props_0: 539609852
       Props_32: 889857768
+      Props_76: -1755409976
       Props_5: -2015813464
       Props_24: -887059186
       Props_13: -211957589
-      Props_34: 1824226371
       Props_19: 1960145651
+      Props_34: 1824226371
       Props_20: 660508320
       Props_46: -728909444
-      Props_51: 1708978152
       Props_37: 279626912
       Props_31: -1351730802
+      Props_51: 1708978152
       Props_81: -879341855
       Props_36: -1165320517
       Props_41: 1023453646
       Props_22: -798902288
-      Props_23: 756553823
       Props_7: 1819749723
+      Props_23: 756553823
       Props_47: 415169056
       Props_8: -1726435688
       Props_67: 434958363
@@ -1907,18 +1907,18 @@ TextureImporter:
       Props_3: 1338383686
       Props_57: -215028524
       Props_16: 1256370958
-      Props_68: 481468978
+      Props_74: 749471957
       Props_61: 885125902
       Props_30: 656504970
       Props_62: -1909916007
+      Props_68: 481468978
       Props_66: 1428480478
       Props_11: 201253972
-      Props_14: 91620725
       Props_21: 1085411782
+      Props_14: 91620725
       Props_35: 555361842
       Props_9: -1903516976
       Props_79: -959902918
-      Props_76: -1755409976
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
