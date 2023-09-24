@@ -42,10 +42,10 @@ GameObject:
   - component: {fileID: 400002}
   - component: {fileID: 9500000}
   - component: {fileID: 5000000}
-  - component: {fileID: -89012157714268961}
   - component: {fileID: 4315955447723986390}
   - component: {fileID: 6613816306304633673}
   - component: {fileID: 8046462065388668900}
+  - component: {fileID: -89012157714268961}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Player Character
@@ -111,22 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-89012157714268961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5441685d04809564a9e6a7e8150d0bc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myAnim: {fileID: 0}
-  maxSpeed: 5
-  jumpHeight: 10
-  gravityScale: 3
 --- !u!70 &4315955447723986390
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -211,6 +195,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-89012157714268961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5441685d04809564a9e6a7e8150d0bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnim: {fileID: 0}
+  acceleration: 0.25
+  decceleration: 1
+  maxSpeed: 15
+  jumpHeight: 15
+  gravityScale: 3
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
