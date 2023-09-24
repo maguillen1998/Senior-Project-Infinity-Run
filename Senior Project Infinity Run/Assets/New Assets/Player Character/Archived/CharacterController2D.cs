@@ -9,7 +9,10 @@ public class CharacterController2D : MonoBehaviour
 {
     public Animator myAnim;
     
-    public float maxSpeed = 3.4f;
+    //acceleration and decceleration are both per fixedupdate not per second
+    public float acceleration = 0.5f;
+    public float decceleration = 2f;
+    public float maxSpeed = 4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
 
@@ -69,13 +72,13 @@ public class CharacterController2D : MonoBehaviour
         {
             if (moveDirection > 0)
             {
-                
                 t.localScale = new Vector3(Mathf.Abs(t.localScale.x), t.localScale.y, transform.localScale.z);
+                Debug.Log("moving right");
             }
             if (moveDirection < 0)
             {
-               
                 t.localScale = new Vector3(-Mathf.Abs(t.localScale.x), t.localScale.y, t.localScale.z);
+                Debug.Log("moving left");
             }
         }
 
@@ -100,10 +103,13 @@ public class CharacterController2D : MonoBehaviour
         Bounds colliderBounds = mainCollider.bounds;
         float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
         Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
+
         // Check if player is grounded
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
+
         //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
         isGrounded = false;
+        myAnim.SetBool("jumping", true);
         if (colliders.Length > 0)
         {
             for (int i = 0; i < colliders.Length; i++)
@@ -111,16 +117,69 @@ public class CharacterController2D : MonoBehaviour
                 if (colliders[i] != mainCollider)
                 {
                     isGrounded = true;
+                    myAnim.SetBool("jumping", false);
                     break;
                 }
             }
         }
-        
 
+
+
+        // Apply movement acceleration to velocity
+        //if acceleration plus current velocity > max speed, set velocity to max speed
+
+        //not pressing d or a deccelerating
+        if (moveDirection == 0)
+        {
+            //accounting for momentum direction to the right
+            if(r2d.velocity.x > 0f)
+            {
+                float newSlowingSpeedX = r2d.velocity.x - decceleration;
+
+                //ensuring decelleration stops at 0.
+                if (newSlowingSpeedX < 0f)
+                {
+                    r2d.velocity = new Vector2(0, r2d.velocity.y);
+                }
+                else
+                {
+                    r2d.velocity = new Vector2(newSlowingSpeedX, r2d.velocity.y);
+                }
+            }
+            //accounting for momentum direction to the left
+            if (r2d.velocity.x < 0f)
+            {
+                float newSlowingSpeedX = r2d.velocity.x + decceleration;
+
+                //ensuring decelleration stops at 0.
+                if (newSlowingSpeedX > 0f)
+                {
+                    r2d.velocity = new Vector2(0, r2d.velocity.y);
+                }
+                else
+                {
+                    r2d.velocity = new Vector2(newSlowingSpeedX, r2d.velocity.y);
+                }
+            }
+        }
+        else
+        {
+            float newSpeedX = r2d.velocity.x + acceleration * moveDirection;
+            if (Mathf.Abs(newSpeedX) > maxSpeed)
+            {
+
+                r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+            }
+            else
+            {
+                r2d.velocity = new Vector2(newSpeedX, r2d.velocity.y);
+            }
+        }
+
+        
         //Updating x-speed variable for the Animator
         myAnim.SetFloat("vSpeed", Mathf.Abs(r2d.velocity.x));
-        // Apply movement velocity
-        r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+
 
         // Simple debug
         //Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
