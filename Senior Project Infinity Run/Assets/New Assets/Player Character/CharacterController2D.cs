@@ -13,12 +13,12 @@ public class CharacterController2D : MonoBehaviour
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
 
-    public Camera mainCamera;
+    //public Camera mainCamera;
 
     bool facingRight = true;
     float moveDirection = 0;
     bool isGrounded = false;
-    Vector3 cameraPos;
+    // Vector3 cameraPos;
     Rigidbody2D r2d;
     CapsuleCollider2D mainCollider;
     Transform t;
@@ -34,11 +34,14 @@ public class CharacterController2D : MonoBehaviour
         r2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         r2d.gravityScale = gravityScale;
         facingRight = t.localScale.x > 0;
+        /*
+         * archive
         mainCamera = Camera.main;
         if (mainCamera)
         {
             cameraPos = mainCamera.transform.position;
         }
+        */
     }
 
     // Update is called once per frame
@@ -82,11 +85,13 @@ public class CharacterController2D : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
+        /*
         // Camera follow
         if (mainCamera)
         {
             mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
         }
+        */
     }
 
     void FixedUpdate()
