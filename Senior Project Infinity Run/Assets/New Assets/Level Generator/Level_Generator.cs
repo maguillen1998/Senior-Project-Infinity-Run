@@ -55,7 +55,7 @@ public class Level_Generator : MonoBehaviour
         int previousSpawnHeight = 0; 
         for (int i = 0; i < levelWidth; i++)
         {
-            int yPlacementVariation = 1;
+            int yPlacementVariation = 2;
             //added +1 to the max random.Range() value because for INT, Random.Range() is inclusive for the min, but exclusive for the max value
             int spawnHeightPosition = Random.Range(previousSpawnHeight - yPlacementVariation, previousSpawnHeight + yPlacementVariation + 1);
             previousSpawnHeight = spawnHeightPosition;

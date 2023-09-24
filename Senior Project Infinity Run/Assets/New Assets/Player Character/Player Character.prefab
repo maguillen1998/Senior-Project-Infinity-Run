@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 9500000}
   - component: {fileID: 5000000}
   - component: {fileID: 4315955447723986390}
-  - component: {fileID: 6613816306304633673}
   - component: {fileID: 8046462065388668900}
-  - component: {fileID: -89012157714268961}
+  - component: {fileID: 6613816306304633673}
+  - component: {fileID: -3623884079541941694}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Player Character
@@ -127,22 +127,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.023582578, y: -0.084839106}
   m_Size: {x: 0.24020118, y: 1.0802629}
   m_Direction: 0
---- !u!114 &6613816306304633673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5d27cd6cf521e478a271d778da4360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinsCollected: 0
-  HealthPoints: 0
-  MaxJumps: 0
-  RemainingJumps: 0
 --- !u!212 &8046462065388668900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -195,7 +179,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-89012157714268961
+--- !u!114 &6613816306304633673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,13 +188,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5441685d04809564a9e6a7e8150d0bc7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5d27cd6cf521e478a271d778da4360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAnim: {fileID: 0}
-  acceleration: 0.25
+  CoinsCollected: 0
+  HealthPoints: 0
+  MaxJumps: 0
+  RemainingJumps: 0
+--- !u!114 &-3623884079541941694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67307dadc1cfa04a8e3496dd1e09bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 0.75
   decceleration: 1
-  maxSpeed: 15
+  maxSpeed: 20
   jumpHeight: 15
   gravityScale: 3
 --- !u!1 &100004
