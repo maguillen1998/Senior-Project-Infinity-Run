@@ -127,7 +127,6 @@ MonoBehaviour:
   maxSpeed: 5
   jumpHeight: 10
   gravityScale: 3
-  mainCamera: {fileID: 0}
 --- !u!70 &4315955447723986390
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,6 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoinsCollected: 0
   HealthPoints: 0
+  MaxJumps: 0
+  RemainingJumps: 0
 --- !u!212 &8046462065388668900
 SpriteRenderer:
   m_ObjectHideFlags: 0
