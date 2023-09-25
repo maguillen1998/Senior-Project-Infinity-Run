@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c77b80ba19964740b98050de1891392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ReferencePlatform: {fileID: 7744293898016202459, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
+  ReferenceSpike: {fileID: 421480931190829124, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
+  ReferenceCoin: {fileID: 3635187267203447749, guid: b3c1ae3329861a14cb72eb6b87c111a1, type: 3}
+  MainCamera: {fileID: 0}
