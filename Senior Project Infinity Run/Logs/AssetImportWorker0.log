@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16245 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 11999 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-B:\Unity\2021.3.11f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\Unity 2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
+C:/src/Senior-Project-Infinity-Run/Senior Project Infinity Run
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62797
-Successfully changed project path to: E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
-E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run
+57050
+Successfully changed project path to: C:/src/Senior-Project-Infinity-Run/Senior Project Infinity Run
+C:/src/Senior-Project-Infinity-Run/Senior Project Infinity Run
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,112 @@ E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infini
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 149.04 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 119.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path B:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Senior Project Infinity Run/Senior-Project-Infinity-Run/Senior Project Infinity Run/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/Unity 2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/src/Senior-Project-Infinity-Run/Senior Project Infinity Run/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 980 Ti (ID=0x17c8)
-    Vendor:   NVIDIA
-    VRAM:     6092 MB
-    Driver:   31.0.15.3667
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a6)
+    Vendor:   Intel
+    VRAM:     5999 MB
+    Driver:   31.0.101.4575
 Initialize mono
-Mono path[0] = 'B:/Unity/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'B:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'B:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: B:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005856 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/Unity 2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008973 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 173.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 104.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
+- Completed reload, in  0.672 seconds
 Domain Reload Profiling:
-	ReloadAssembly (978ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (673ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (738ms)
-			LoadAssemblies (101ms)
+		EndReloadAssembly (457ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (149ms)
+			SetupTypeCache (83ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (483ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (286ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (174ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (222ms)
-				ProcessInitializeOnLoadMethodAttributes (69ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015577 seconds.
+Registered in 0.010996 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 163.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 106.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.867 seconds
+- Completed reload, in  1.440 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1868ms)
-		BeginReloadAssembly (151ms)
+	ReloadAssembly (1441ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1570ms)
-			LoadAssemblies (135ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1217ms)
+			LoadAssemblies (250ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (428ms)
+			SetupTypeCache (253ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (108ms)
-			SetupLoadedEditorAssemblies (832ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (611ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (163ms)
-				BeforeProcessingInitializeOnLoad (176ms)
-				ProcessInitializeOnLoadAttributes (355ms)
-				ProcessInitializeOnLoadMethodAttributes (127ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (91ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5531 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (1.3 MB). Loaded Objects now: 5968.
-Memory consumption went from 216.9 MB to 215.6 MB.
-Total: 5.229300 ms (FindLiveObjects: 0.597700 ms CreateObjectMapping: 0.343700 ms MarkObjects: 3.650100 ms  DeleteObjects: 0.636800 ms)
+Unloading 5545 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (0.7 MB). Loaded Objects now: 5996.
+Memory consumption went from 217.9 MB to 217.2 MB.
+Total: 4.116300 ms (FindLiveObjects: 0.389400 ms CreateObjectMapping: 0.208000 ms MarkObjects: 3.280200 ms  DeleteObjects: 0.237900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -159,919 +160,119 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 192096.951586 seconds.
-  path: Assets/New Assets
-  artifactKey: Guid(75097e2657440e2469d9ce2ad83d8e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets using Guid(75097e2657440e2469d9ce2ad83d8e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bac535baa554a63ee77f52a5349bc1a') in 0.019441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.942645 seconds.
-  path: Assets/New Assets/Obstacle Generation.unity
-  artifactKey: Guid(327b4d5f5aed4594d88005ebe17cc3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Obstacle Generation.unity using Guid(327b4d5f5aed4594d88005ebe17cc3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d204613e298b57996b125140bc63b5b') in 0.012238 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 72.598775 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44eadf12439ed1f7d7560fe0621bfb4c') in 0.070122 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.088391 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f9b5646fd702f7340861ae14effdc1') in 0.259499 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 52.363602 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8
-  artifactKey: Guid(40c7139bfaff577439faa8259edbdd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8 using Guid(40c7139bfaff577439faa8259edbdd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666bda6aa0156b0d973100e6622b6ae1') in 0.011707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.037378 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset
-  artifactKey: Guid(0ff6d9c91dcafd84c822715f763c8ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset using Guid(0ff6d9c91dcafd84c822715f763c8ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfc61c21872e6bfa4bc9fee98661b34') in 0.010302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.029989 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png
-  artifactKey: Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png using Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d07c0bb6c3365d4ff807bf293bb5e59') in 0.064378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Background_1.png
-  artifactKey: Guid(ce68b8e110bdac043a325efaa545790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Background_1.png using Guid(ce68b8e110bdac043a325efaa545790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e450ec9aac8c54bed291fafc31f857') in 0.033569 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Background_2.png
-  artifactKey: Guid(1f8fb462fa3b95c40914b142c0796a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Background_2.png using Guid(1f8fb462fa3b95c40914b142c0796a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102a047425930efad89cb7172ad9880a') in 0.028721 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 59.352261 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png
-  artifactKey: Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png using Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9014549930be1edf14ebf5395b1ef963') in 0.028451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 214.751723 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png
-  artifactKey: Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets.png using Guid(c28082bb967de0c48b7410f656502798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd751582efbc1f80a9cc1470d96bebfb6') in 1.901859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 123.746065 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Forest Tiles.prefab
-  artifactKey: Guid(0ccd8d77e91799743a05361a87e1cb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Forest Tiles.prefab using Guid(0ccd8d77e91799743a05361a87e1cb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ff81de8439a5a4ca15d7802713280d') in 0.028139 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.854357 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_0.asset
-  artifactKey: Guid(6edb94be62c26684ba8bea3f4fa077bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_0.asset using Guid(6edb94be62c26684ba8bea3f4fa077bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd5a31d77d60696bb1106bf536bd7a4') in 0.027588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_21.asset
-  artifactKey: Guid(6b9cd9a3e1d709747b134888f1a9ed2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_21.asset using Guid(6b9cd9a3e1d709747b134888f1a9ed2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735ecfc42af44e288c1f22830ab669b5') in 0.019072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_3.asset
-  artifactKey: Guid(fbfcc606e30391b49b64c1018ab3854f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_3.asset using Guid(fbfcc606e30391b49b64c1018ab3854f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aba435057741a7077e93e0082d7d16f') in 0.015462 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_15.asset
-  artifactKey: Guid(c49121aa915897f4997131968cf2279d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_15.asset using Guid(c49121aa915897f4997131968cf2279d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1d311810cdfd5c0fdfb560e9ed1182') in 0.019518 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_23.asset
-  artifactKey: Guid(1c198fdb348984c48ae9f78c9051e1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_23.asset using Guid(1c198fdb348984c48ae9f78c9051e1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd721cb2337226aba1dfd191a9e49fb61') in 0.020101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_25.asset
-  artifactKey: Guid(c2e6fa4915b330c4dbd740b4a65a65ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_25.asset using Guid(c2e6fa4915b330c4dbd740b4a65a65ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184e9a4706d9062b86abca61ba40d731') in 0.018016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_24.asset
-  artifactKey: Guid(29d969b907342584e87bab00b65824ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_24.asset using Guid(29d969b907342584e87bab00b65824ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c58c709a43edb463ebe58a2a617544c') in 0.016924 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_7.asset
-  artifactKey: Guid(c4db5fcfa65a26740accafa75eda805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_7.asset using Guid(c4db5fcfa65a26740accafa75eda805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c818ba258437bb5dcf3f8a051eb29342') in 0.017749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_8.asset
-  artifactKey: Guid(2f4eeab57746b8e4ab112f8c18af85ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_8.asset using Guid(2f4eeab57746b8e4ab112f8c18af85ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd588fd3b4d76a1dda0bbe483d08c95b2') in 0.017712 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_9.asset
-  artifactKey: Guid(680a6d1b8a4f5f249956c37aa0cf292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_9.asset using Guid(680a6d1b8a4f5f249956c37aa0cf292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09113bf69ff9f05faa0c6e43bb08a311') in 0.018342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_12.asset
-  artifactKey: Guid(4920ed279000a1b4eb257d02ce9126b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_12.asset using Guid(4920ed279000a1b4eb257d02ce9126b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56740d0457dc20c5aac33793ac76984e') in 0.021005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_22.asset
-  artifactKey: Guid(d4ba2c1971fe0514083c9fa1ecc16286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_22.asset using Guid(d4ba2c1971fe0514083c9fa1ecc16286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e95971f507345206c1930f8ddd608af') in 0.018669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_18.asset
-  artifactKey: Guid(f95f83b4feaee584a836813126606d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_18.asset using Guid(f95f83b4feaee584a836813126606d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42017c94be87fee76932b6adfdf6c938') in 0.017851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_29.asset
-  artifactKey: Guid(417f3c4e92e41ef4b99ca1d390121d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_29.asset using Guid(417f3c4e92e41ef4b99ca1d390121d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2634fd364397cdc5bcc475d1116e9c') in 0.020761 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_4.asset
-  artifactKey: Guid(c5b4ec2ada1b0c74e935aee5fa764f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_4.asset using Guid(c5b4ec2ada1b0c74e935aee5fa764f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b2bbb0c1d91b82b09a078635235595') in 0.018260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_19.asset
-  artifactKey: Guid(3848bbb1ef1d0fe429b1050616a4a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_19.asset using Guid(3848bbb1ef1d0fe429b1050616a4a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '471a6e93189de1002646429d727aee25') in 0.017669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_16.asset
-  artifactKey: Guid(24ac8b08ef0468847bda9c9b4a6bbe47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_16.asset using Guid(24ac8b08ef0468847bda9c9b4a6bbe47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9cd2649a5b53b6e4fbbdc5a24955aa') in 0.019309 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_11.asset
-  artifactKey: Guid(5dc880a43729a974abdfeb10a29d11ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_11.asset using Guid(5dc880a43729a974abdfeb10a29d11ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9205538e0d7fde3d8d02b9cb2a0e73') in 0.017962 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_26.asset
-  artifactKey: Guid(c71be1ee72a987846a115506d3d0abea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_26.asset using Guid(c71be1ee72a987846a115506d3d0abea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c2be523f4d7f94efd808eda98dee16') in 0.017157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_20.asset
-  artifactKey: Guid(bdd54a5ae1b200c489c9d49876b778d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_20.asset using Guid(bdd54a5ae1b200c489c9d49876b778d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73ab0dcb55038c769259a4fceba8f0b') in 0.017633 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_27.asset
-  artifactKey: Guid(431f6f2d5ddbd00478c47d36c8b77722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_27.asset using Guid(431f6f2d5ddbd00478c47d36c8b77722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eca215a654c563b45ef7756e840bdb5') in 0.016807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_14.asset
-  artifactKey: Guid(b9f1836ee633edf4682b12e193f3206c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_14.asset using Guid(b9f1836ee633edf4682b12e193f3206c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbad23e95ee4bd794974bcee4e9a506c') in 0.017878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_6.asset
-  artifactKey: Guid(4477071794e08e14fb9cd228ed468750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_6.asset using Guid(4477071794e08e14fb9cd228ed468750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d271f685c3c7271d81f5a160ad6a3fd') in 0.020044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_10.asset
-  artifactKey: Guid(78ac91d4002832b4fb92a24e7cf65ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_10.asset using Guid(78ac91d4002832b4fb92a24e7cf65ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d10c8ed14a813f3a2633827cf6d40eb') in 0.018352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_1.asset
-  artifactKey: Guid(e0820f1db517da84ab1622f05abbf769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_1.asset using Guid(e0820f1db517da84ab1622f05abbf769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8d56260f0049ea0f7503b205eb5307') in 0.017589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_13.asset
-  artifactKey: Guid(33411ea16287b7f4ca1d1f6a139c6412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_13.asset using Guid(33411ea16287b7f4ca1d1f6a139c6412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7f87fbbcd54313f9077cb8be33d9f0') in 0.019284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_17.asset
-  artifactKey: Guid(d0b4001c14333134ba888f3d2229e5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_17.asset using Guid(d0b4001c14333134ba888f3d2229e5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8198652150048d8ff8fba97f1b887db9') in 0.018388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_28.asset
-  artifactKey: Guid(06499ca0dd654bf4299006b7ad432648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_28.asset using Guid(06499ca0dd654bf4299006b7ad432648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0784bb7207baaba5bf8bb676a08f9a77') in 0.017401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_2.asset
-  artifactKey: Guid(1042c4c137168984a865f06b009d56ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_2.asset using Guid(1042c4c137168984a865f06b009d56ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1336502c34213146e06a028d9eecc245') in 0.017167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_5.asset
-  artifactKey: Guid(ed88e46a3e45acc4983defeac14b65a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_5.asset using Guid(ed88e46a3e45acc4983defeac14b65a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f00577f2a356cdc1970035afc399187') in 0.017241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.911727 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_30.asset
-  artifactKey: Guid(4a8b26ac9b0c31245a9d838df91a99a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_30.asset using Guid(4a8b26ac9b0c31245a9d838df91a99a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b00eca371acfaebb1178c334ed4ff02') in 0.020828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_64.asset
-  artifactKey: Guid(5bb3ba0e03c45a641a1be9cb11d152f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_64.asset using Guid(5bb3ba0e03c45a641a1be9cb11d152f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a24d68c971ed4be1d1b526cb7cc7663') in 0.023537 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_66.asset
-  artifactKey: Guid(bd2e0f46eabe52a47a5d50a8f2607b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_66.asset using Guid(bd2e0f46eabe52a47a5d50a8f2607b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388c3b070d77984e7569697bc6296fef') in 0.024757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_45.asset
-  artifactKey: Guid(d03939c1753126543aec6089dc84dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_45.asset using Guid(d03939c1753126543aec6089dc84dccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6501fc9eec2e8159ad1dce5155a8b4e4') in 0.019015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_39.asset
-  artifactKey: Guid(9e7a24c2234550c43b1e5d7a1d097956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_39.asset using Guid(9e7a24c2234550c43b1e5d7a1d097956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff6ea0421a535f2a0b9754961ed1af4') in 0.022226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_72.asset
-  artifactKey: Guid(dc3c3d4da4cd8aa45a70ccdde3e4613f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_72.asset using Guid(dc3c3d4da4cd8aa45a70ccdde3e4613f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79532f32dd82a4b106ca23ddc60d367') in 0.020658 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_71.asset
-  artifactKey: Guid(f1f768631f66b77448438bd37e14481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_71.asset using Guid(f1f768631f66b77448438bd37e14481a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef7b588d43e2119cb04417d819f359b') in 0.020429 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_69.asset
-  artifactKey: Guid(13efc43f473d9af468ddbaf0fdb94450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_69.asset using Guid(13efc43f473d9af468ddbaf0fdb94450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b05108e6968043dbb85e140591e1fb0') in 0.026950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_34.asset
-  artifactKey: Guid(507313a15fc4b0841a77d2f23abedfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_34.asset using Guid(507313a15fc4b0841a77d2f23abedfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b34625fe00638090a95222cd4b0375') in 0.020269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_46.asset
-  artifactKey: Guid(67667eef0b654e8429c161d9bd5ae5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_46.asset using Guid(67667eef0b654e8429c161d9bd5ae5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8945ad95c899b4961d8b480a0175b8') in 0.021348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_67.asset
-  artifactKey: Guid(2516ac1a8533d434cb79a7e9e851e6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_67.asset using Guid(2516ac1a8533d434cb79a7e9e851e6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e104fbe4592c3012ede8fee0eedf98e') in 0.020229 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_56.asset
-  artifactKey: Guid(d48f4836265075e4aac0e759d844cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_56.asset using Guid(d48f4836265075e4aac0e759d844cf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafa4f60f8590419b37801631b8434ca') in 0.019305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_70.asset
-  artifactKey: Guid(bb3cd9291a019854cabbe84f38bad1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_70.asset using Guid(bb3cd9291a019854cabbe84f38bad1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f1cd33db4305f2a3d99695cb2065e0') in 0.020862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_37.asset
-  artifactKey: Guid(60cacbdc5a20c7d4b88eecd3f9fddc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_37.asset using Guid(60cacbdc5a20c7d4b88eecd3f9fddc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1d47a1ab3abeb4c38068e11c8b435d') in 0.022170 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_44.asset
-  artifactKey: Guid(4e35cd38deffc584f9334169a0879e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_44.asset using Guid(4e35cd38deffc584f9334169a0879e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28b05b052f4d923c3819e124d6e66e4') in 0.018496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_55.asset
-  artifactKey: Guid(a584f5ea911b44f44adeed458ee5c280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_55.asset using Guid(a584f5ea911b44f44adeed458ee5c280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7cea964b9950310e89cd1aa44a8d94') in 0.018757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_61.asset
-  artifactKey: Guid(e7cc2b4db5b8f534aa4c8ad272a99623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_61.asset using Guid(e7cc2b4db5b8f534aa4c8ad272a99623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8313f3462807cd586df0f0c1bc4954d8') in 0.019673 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_38.asset
-  artifactKey: Guid(6e9dd36ddbd060b4b809cea7321884de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_38.asset using Guid(6e9dd36ddbd060b4b809cea7321884de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74acf5ff8dab24f94c0b9989a01bb80f') in 0.019855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_43.asset
-  artifactKey: Guid(cc6179556f4de7047b70e695a8a19d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_43.asset using Guid(cc6179556f4de7047b70e695a8a19d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bb8cc5884edf69d2262dd2ddb66a4d') in 0.019732 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_53.asset
-  artifactKey: Guid(00bd1cef6d70afc45bdee72ad5025445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_53.asset using Guid(00bd1cef6d70afc45bdee72ad5025445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8e1b98e667599b45da3974bf2f3c4f') in 0.018118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_63.asset
-  artifactKey: Guid(5aac5b8d8398a01499b7a7ec74688c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_63.asset using Guid(5aac5b8d8398a01499b7a7ec74688c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6164f060f0bc5b93b1a0d9ef4739f4b3') in 0.018399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_48.asset
-  artifactKey: Guid(77cba15beeeb10c4aa3600ae53871a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_48.asset using Guid(77cba15beeeb10c4aa3600ae53871a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a9934555c8f0096f2acacc5d9b3c99') in 0.018898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_65.asset
-  artifactKey: Guid(7fb51fdb77346fd4092164e7b396516b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_65.asset using Guid(7fb51fdb77346fd4092164e7b396516b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b38672dc5dacdee17c7c4f40fb9a0c') in 0.031326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_36.asset
-  artifactKey: Guid(9eed9cc522d033e498aeddc283d2938c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_36.asset using Guid(9eed9cc522d033e498aeddc283d2938c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6eb2081627e6c7297209767ae8f985') in 0.020439 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_31.asset
-  artifactKey: Guid(4733a67617f305d469357b443d52614b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_31.asset using Guid(4733a67617f305d469357b443d52614b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa5f2d2ae4a87e723fa558bcc20e4500') in 0.019634 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_76.asset
-  artifactKey: Guid(729d8f4b5b1905a419d8501093b26ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_76.asset using Guid(729d8f4b5b1905a419d8501093b26ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cb289407e6ae51d5ad62b6d9677123') in 0.022250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_79.asset
-  artifactKey: Guid(1ca40c0d77f397a4f84338ad0099b7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_79.asset using Guid(1ca40c0d77f397a4f84338ad0099b7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476ad935c0821c1967a20c701df443a9') in 0.019060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_73.asset
-  artifactKey: Guid(6cea8ac9b527087438e99b1cdec77478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_73.asset using Guid(6cea8ac9b527087438e99b1cdec77478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f41ec1f63f72045f2f12418fefafa0') in 0.018381 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_35.asset
-  artifactKey: Guid(3dc1eb488a12e2145aa83179dcabb4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_35.asset using Guid(3dc1eb488a12e2145aa83179dcabb4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd8098c45d0c25ececda060e996745b') in 0.019379 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_78.asset
-  artifactKey: Guid(25144bd1326f5224390b133c1f53c044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_78.asset using Guid(25144bd1326f5224390b133c1f53c044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9742bc93fad38115598503d29a09fee8') in 0.021261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_57.asset
-  artifactKey: Guid(8b0970c0b89da204a93fe15f7a052b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_57.asset using Guid(8b0970c0b89da204a93fe15f7a052b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c60c2ccf97e020b72058f5907d1961') in 0.030921 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_68.asset
-  artifactKey: Guid(e9a8541f2c666ae4f8e0c602b97deadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_68.asset using Guid(e9a8541f2c666ae4f8e0c602b97deadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc82286dd38db907910fd0f24bba496') in 0.017406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_40.asset
-  artifactKey: Guid(009d6f86380feb048aa56c8be4bc91d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_40.asset using Guid(009d6f86380feb048aa56c8be4bc91d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15633fb6ce27c5d78af08bd130086f6') in 0.018751 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_41.asset
-  artifactKey: Guid(52ca19d26e78b4d48b37b175396383c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_41.asset using Guid(52ca19d26e78b4d48b37b175396383c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22e4b645bc1afb927e3753af85b22fb') in 0.022447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_58.asset
-  artifactKey: Guid(ffbcf20ad9f50c5458dfc54f79d41c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_58.asset using Guid(ffbcf20ad9f50c5458dfc54f79d41c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3c26086b163b13b983be03142f8abf') in 0.019400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_47.asset
-  artifactKey: Guid(7d7eea2d65552614c8fd0717ac3feb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_47.asset using Guid(7d7eea2d65552614c8fd0717ac3feb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bcc829caa09279bee1a1ea8179125f') in 0.019285 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_42.asset
-  artifactKey: Guid(60dcf0bef8f8e414381562a66236bd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_42.asset using Guid(60dcf0bef8f8e414381562a66236bd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e97ed64581cae24420506ff5e0d186') in 0.019989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_59.asset
-  artifactKey: Guid(0d0de0df017a1834ba7b0dcf31b62cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_59.asset using Guid(0d0de0df017a1834ba7b0dcf31b62cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cedd0935915b5d519b38653a5cf1e7f') in 0.030471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_32.asset
-  artifactKey: Guid(62c1c1d7ed0b29b4786c776f7200d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_32.asset using Guid(62c1c1d7ed0b29b4786c776f7200d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21f751c0ce788f2439a741b8152b5be') in 0.027828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_49.asset
-  artifactKey: Guid(7bd4b2a3764a2f848ae3b1ebaa39e5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_49.asset using Guid(7bd4b2a3764a2f848ae3b1ebaa39e5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30861d1f8634d93bf08dbc4418fb8789') in 0.023402 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_50.asset
-  artifactKey: Guid(deba56d1bd300d94eb492d107826b1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_50.asset using Guid(deba56d1bd300d94eb492d107826b1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813d52113b894f4777c5e7760c94dfe9') in 0.019291 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_60.asset
-  artifactKey: Guid(ed1b425d30c994045a68989153241197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_60.asset using Guid(ed1b425d30c994045a68989153241197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a017e2f652de466b377fbe149005fd3') in 0.019184 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_52.asset
-  artifactKey: Guid(752244ceb0f8ad24f81039821e3e378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_52.asset using Guid(752244ceb0f8ad24f81039821e3e378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886d343e99ba0a19b9a4a4ffc87ea489') in 0.019630 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_62.asset
-  artifactKey: Guid(31cfa6fc193dabc4c9a01ae1d5c4dbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_62.asset using Guid(31cfa6fc193dabc4c9a01ae1d5c4dbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b6f9e07d219db4e2454fc85ddeea89') in 0.019933 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_77.asset
-  artifactKey: Guid(947dffb67b747ca44826ce01c3cf1813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_77.asset using Guid(947dffb67b747ca44826ce01c3cf1813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e9181299412b7a2a695753911f328c') in 0.034877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_51.asset
-  artifactKey: Guid(3d98a4dc2d4e66c4aa794de551e7a163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_51.asset using Guid(3d98a4dc2d4e66c4aa794de551e7a163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287ecadbf957be1c1346216b8589ac4a') in 0.017709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_75.asset
-  artifactKey: Guid(6f3b55bf6788a934cabc48b5282d800f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_75.asset using Guid(6f3b55bf6788a934cabc48b5282d800f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c8e3326d4d6b129ff16b9387b0c7a7') in 0.018028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_33.asset
-  artifactKey: Guid(44f66a90350cc9e48942a8e5d603f4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_33.asset using Guid(44f66a90350cc9e48942a8e5d603f4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09200a1e3b1edd48ec63153e0a011c3f') in 0.019606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_54.asset
-  artifactKey: Guid(a4756e8b917595b48953ba639977c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_54.asset using Guid(a4756e8b917595b48953ba639977c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46bae26bbabbb59b366bb9f383bb0ab5') in 0.020441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_74.asset
-  artifactKey: Guid(aeef0173f0dc0de44ad3ec9ac0bf8da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Pixel Crawler - FREE - 1.8/Forest Tileset/Assets_74.asset using Guid(aeef0173f0dc0de44ad3ec9ac0bf8da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2750304c7631ea3a7a5a4629cfbd312') in 0.018891 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.542192 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126a61fc708e838eaa214cad10697716') in 0.020904 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 69.069258 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0048455eb6415ff536496eea8a45ed4b') in 0.020986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.835273 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3518703fc817aef17d681e2ed45d7cf2') in 0.020458 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.027870 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d4b3a4a8333b9b8a7a56baa0e315f9') in 0.020219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.021020 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ca82bee3e356ff7092bf4eb08c1664') in 0.022301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.246202 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5a26632fef3198991779aa8db05328') in 0.019541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.598726 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145d5f797a943a11873e68cc49632a77') in 0.020462 seconds 
+  Time since last request: 831437.666956 seconds.
+  path: Assets/Scenes/main menu.unity
+  artifactKey: Guid(9926f43e136791f4e9320b0fad674e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main menu.unity using Guid(9926f43e136791f4e9320b0fad674e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c694d0e2e04c3305c40b4173ed171230') in 0.025510 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010339 seconds.
+Registered in 0.008452 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.54 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.986 seconds
+- Completed reload, in  1.800 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1987ms)
-		BeginReloadAssembly (250ms)
+	ReloadAssembly (1801ms)
+		BeginReloadAssembly (241ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (31ms)
+			DisableScriptedObjects (24ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (74ms)
-		EndReloadAssembly (1575ms)
-			LoadAssemblies (169ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1407ms)
+			LoadAssemblies (238ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (492ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (693ms)
+			SetupTypeCache (387ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (628ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (375ms)
-				ProcessInitializeOnLoadMethodAttributes (153ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (333ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5421 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (1.2 MB). Loaded Objects now: 6032.
-Memory consumption went from 217.0 MB to 215.7 MB.
-Total: 5.400900 ms (FindLiveObjects: 0.440000 ms CreateObjectMapping: 0.220700 ms MarkObjects: 4.121300 ms  DeleteObjects: 0.617900 ms)
+Unloading 5400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 5999.
+Memory consumption went from 207.7 MB to 207.0 MB.
+Total: 5.299200 ms (FindLiveObjects: 0.389200 ms CreateObjectMapping: 0.252700 ms MarkObjects: 4.334400 ms  DeleteObjects: 0.321300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 78.716742 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b7e3cfbfa1ef9ee21a8bae0fb8b0b3') in 0.265651 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.011471 seconds.
+Registered in 0.013994 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\src\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.920 seconds
+- Completed reload, in  1.638 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1921ms)
-		BeginReloadAssembly (184ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1586ms)
-			LoadAssemblies (139ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (462ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (86ms)
-			SetupLoadedEditorAssemblies (750ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (161ms)
-				ProcessInitializeOnLoadAttributes (407ms)
-				ProcessInitializeOnLoadMethodAttributes (153ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.02 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5421 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (1.2 MB). Loaded Objects now: 6076.
-Memory consumption went from 217.0 MB to 215.8 MB.
-Total: 6.738100 ms (FindLiveObjects: 0.597300 ms CreateObjectMapping: 0.403700 ms MarkObjects: 4.965800 ms  DeleteObjects: 0.769900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 54.851029 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258bb3ed140360d8f6fcd12463f1741e') in 0.321695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.574011 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4af0dc779b3cab56ea3bff07a63700') in 0.021839 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.363788 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc59e144ef1c2de7b43339ae477e01a') in 0.020540 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.624472 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440539868a44a184a1b259a4b4d25e03') in 0.021357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.393911 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9863acf3166a8ae2af5d91266d97aa0') in 0.018735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.411655 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06b9536568b9b7dfa6c88ef637508f3') in 0.021247 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.038400 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff84c7d037435265ab0d117592a75dda') in 0.021295 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.253398 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f18fe5c0b7ce6ce35a0ea4a80b3bed') in 0.020466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.209010 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085596b078d926d619151fdf084fa6fe') in 0.021866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.409853 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398cd90d9851c94beecbfa509cf8ecac') in 0.020129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.203130 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fe1c03ff23ee2ba6da7e110f5e1c9f') in 0.019541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.004483 seconds.
-  path: Assets/New Assets/Tilemap Development.prefab
-  artifactKey: Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/Tilemap Development.prefab using Guid(77d755846aee4874a8ce9f826fea1b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5db8e93c0c3f8bdb99278eedcacf9e') in 0.019615 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010933 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.04 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.970 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1971ms)
-		BeginReloadAssembly (210ms)
+	ReloadAssembly (1639ms)
+		BeginReloadAssembly (200ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1598ms)
-			LoadAssemblies (163ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1320ms)
+			LoadAssemblies (139ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (463ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (91ms)
-			SetupLoadedEditorAssemblies (752ms)
+			SetupTypeCache (378ms)
+			ReleaseScriptCaches (8ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (633ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (152ms)
-				ProcessInitializeOnLoadAttributes (416ms)
-				ProcessInitializeOnLoadMethodAttributes (154ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (120ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5421 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (1.2 MB). Loaded Objects now: 6120.
-Memory consumption went from 217.1 MB to 215.9 MB.
-Total: 7.466200 ms (FindLiveObjects: 0.522700 ms CreateObjectMapping: 1.076600 ms MarkObjects: 5.106400 ms  DeleteObjects: 0.759300 ms)
+Unloading 5400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 6002.
+Memory consumption went from 207.7 MB to 207.0 MB.
+Total: 5.790300 ms (FindLiveObjects: 0.558500 ms CreateObjectMapping: 0.277400 ms MarkObjects: 4.464100 ms  DeleteObjects: 0.476800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 115.655956 seconds.
-  path: Assets/New Assets/CharacterRobotBoy 1.prefab
-  artifactKey: Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/CharacterRobotBoy 1.prefab using Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb4d3603d28c7f0c194b650209ce345') in 0.299949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.453681 seconds.
-  path: Assets/New Assets/CharacterRobotBoy 1.prefab
-  artifactKey: Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/CharacterRobotBoy 1.prefab using Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575761bc45549cfed3d1858657585cd9') in 0.037926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.000520 seconds.
-  path: Assets/New Assets/CharacterRobotBoy 1.prefab
-  artifactKey: Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/CharacterRobotBoy 1.prefab using Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9a64e6368b1784c98f968f0534068d') in 0.023872 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.475635 seconds.
-  path: Assets/New Assets/CharacterRobotBoy 1.prefab
-  artifactKey: Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Assets/CharacterRobotBoy 1.prefab using Guid(e7e7a8e5fa6422740801a3c8bb6fd813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243004564b0fe4a501117ae5dc84fa8b') in 0.026203 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010305 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Senior Project Infinity Run\Senior-Project-Infinity-Run\Senior Project Infinity Run\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.905 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1906ms)
-		BeginReloadAssembly (195ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1576ms)
-			LoadAssemblies (158ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (458ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (86ms)
-			SetupLoadedEditorAssemblies (738ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (408ms)
-				ProcessInitializeOnLoadMethodAttributes (153ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5421 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (1.2 MB). Loaded Objects now: 6164.
-Memory consumption went from 217.2 MB to 216.0 MB.
-Total: 5.890800 ms (FindLiveObjects: 0.564100 ms CreateObjectMapping: 0.338800 ms MarkObjects: 4.304200 ms  DeleteObjects: 0.682400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
