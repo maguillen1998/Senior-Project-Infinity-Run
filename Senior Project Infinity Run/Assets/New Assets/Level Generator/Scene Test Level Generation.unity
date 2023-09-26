@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4036199007214002439, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4036199007214002439, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
---- !u!1001 &1370376771
+--- !u!1001 &1181060022
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -189,7 +189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 155964542344592345, guid: 9f1c110b0ab37004d9ba15b2942c59c1, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 155964542344592345, guid: 9f1c110b0ab37004d9ba15b2942c59c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -235,14 +235,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Generator
       objectReference: {fileID: 0}
-    - target: {fileID: 2785366985876271057, guid: 9f1c110b0ab37004d9ba15b2942c59c1, type: 3}
-      propertyPath: MainCamera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2785366985876271057, guid: 9f1c110b0ab37004d9ba15b2942c59c1, type: 3}
-      propertyPath: ReferencePlatform
-      value: 
-      objectReference: {fileID: 7744293898016202459, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f1c110b0ab37004d9ba15b2942c59c1, type: 3}
 --- !u!1001 &1639035538
@@ -262,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
       propertyPath: m_LocalPosition.x
