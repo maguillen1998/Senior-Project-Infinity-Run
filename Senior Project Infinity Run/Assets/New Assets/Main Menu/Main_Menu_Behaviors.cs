@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu_Behaviors : MonoBehaviour
 {
+    //NOTE: Marco here, I moved this scrip from the Canvas gameobject into it's own gameobject called Menu Functions
    public void PlayGame()
     {        
         SceneManager.LoadScene("Scene Test Level Generation");
