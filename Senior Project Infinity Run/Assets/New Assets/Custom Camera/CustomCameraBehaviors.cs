@@ -9,12 +9,16 @@ public class CustomCameraBehaviors : MonoBehaviour
 
     //Important to offset on the Z axis to avoid accidentally clipping the PC, causing their sprite to disappear due to it being too close to the camera
     //z offset must be > the  close clipping plane of the camera
-    Vector3 offset = new Vector3(0,0,-10);
+    Vector3 offset;
+    float ZOffset = -10f;
     // Start is called before the first frame update
     void Start()
     {
+        float camHeight = this.GetComponent<Camera>().orthographicSize * 2f;
+        float Yoffset = camHeight/4f;
+        offset = new Vector3(0, Yoffset, ZOffset);
         //if checks to make sure that the "Player Character" tag exists before trying to access it to assign to the player variable
-        if(GameObject.FindWithTag("Player Character"))
+        if (GameObject.FindWithTag("Player Character"))
         {
             player = GameObject.FindWithTag("Player Character");
             Debug.Log("Camera: script SUCCESSFULLY found GameObject tagged 'Player Character'");
