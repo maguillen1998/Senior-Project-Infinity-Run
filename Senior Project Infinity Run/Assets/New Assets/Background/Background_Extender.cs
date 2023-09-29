@@ -6,6 +6,7 @@ public class Background_Extender : MonoBehaviour
 {
     public GameObject referenceBackgroundChunk;
     public int ChunksToPlace = 100;
+    public float ParallaxFactor = 1f;
     // Start is called before the first frame update
     void Start()
     {
