@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct Pair<T1, T2>
+{
+    public T1 First;
+    public T2 Second;
+}
+
 public class Level_Generator : MonoBehaviour
 {
-    public GameObject ReferencePlatform;
+    public GameObject ReferencePlatfromSquare;
+    public GameObject ReferencePlatfromWide;
     public GameObject ReferenceSpike;
     public GameObject ReferenceCoin;
     public Camera MainCamera;
@@ -13,7 +20,7 @@ public class Level_Generator : MonoBehaviour
     void Start()
     {
         //testing methods to spawn level terrain
-        SpawnPlatforms();
+        SpawnPlatformsNewest();
     }
 
     // Update is called once per frame
@@ -21,8 +28,44 @@ public class Level_Generator : MonoBehaviour
     {
         
     }
-    /*
-    void SpawnPlatformsA()
+
+    void SpawnPlatformsNewest()
+    {//currently the implementetion is a bit dirty, but it works and is customizable
+        float terrainPreviousPlacementHeight = 0f;
+        float terrainPlacementHeightVariance = 3f;
+        int terrainWidthVariance = 20;
+        float terrainCurrentPlacementHeight;//declaring for assignment within the for loop below
+        
+
+        int levelChunkLength = 100;
+        Pair<bool, float>[] terrainMap = new Pair<bool, float>[levelChunkLength];//1=terrain placed here 0=empty, float indicates placement height
+        int x = 0;
+        while (x < levelChunkLength)
+        {
+            //determine height
+            terrainCurrentPlacementHeight = Random.Range(terrainPreviousPlacementHeight - terrainPlacementHeightVariance, terrainPreviousPlacementHeight + terrainPlacementHeightVariance);
+            terrainPreviousPlacementHeight = terrainCurrentPlacementHeight;
+            int terrainWidth = Random.Range(1, terrainWidthVariance);
+
+            int widthCounter = 0;
+            while(x < levelChunkLength && widthCounter < terrainWidth)
+            {
+                terrainMap[x].First = true;
+                terrainMap[x].Second = terrainCurrentPlacementHeight;
+                widthCounter++;
+                x++;
+            }
+        }
+
+        for(int i = 0; i < terrainMap.Length; i++)
+        {//instantiate platforms based on terrain map
+            Vector3 position = new Vector3(i, Mathf.RoundToInt(terrainMap[i].Second), 0f);
+            Quaternion rotation = Quaternion.identity;
+            Transform parent = this.gameObject.transform;
+            Instantiate(ReferencePlatfromSquare, position, rotation, parent);
+        }
+    }
+    void SpawnPlatformsRandom()
     {
         //Archived
         //This is the first version of the placement algorithm. 
@@ -41,11 +84,11 @@ public class Level_Generator : MonoBehaviour
             Vector3 position = new Vector3(xPosition, yPosition, zPosition);
             Quaternion rotation = new Quaternion();
 
-            GameObject spawningPlatform = Instantiate(ReferencePlatform, position, rotation);
+            GameObject spawningPlatform = Instantiate(ReferencePlatfromSquare, position, rotation);
         }
     }
-    */
-    void SpawnPlatforms()
+
+    void SpawnPlatformsPerlin()
     {
         //testing methods to spawn level terrain
         //Always places form origin. need to allow placement based on local scale and allow the platforms to be spawned anywhere
@@ -88,7 +131,7 @@ public class Level_Generator : MonoBehaviour
                     Vector3 position = new Vector3(xPosition, yPosition, zPosition);
                     Quaternion rotation = new Quaternion();
 
-                    GameObject spawningPlatform = Instantiate(ReferencePlatform, position, rotation);
+                    GameObject spawningPlatform = Instantiate(ReferencePlatfromSquare, position, rotation);
                 }
             } 
         }
