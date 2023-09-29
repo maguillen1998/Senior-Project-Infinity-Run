@@ -11,6 +11,8 @@ public class Archived_Background_Parallax : MonoBehaviour
     //new vals for different
     private Transform mainCameraTransform;
     private Vector3 lastCameraPosition;
+
+    //for brute force method
     public float ParallaxFactor = 0;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class Archived_Background_Parallax : MonoBehaviour
 
     }
 
+    //depreciated
     void BruteForceParallax()
     {
         Vector3 cameraMovement = mainCameraTransform.position - lastCameraPosition;
