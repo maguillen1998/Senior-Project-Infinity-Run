@@ -3,28 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Background_Parallax : MonoBehaviour
-{
+{//this implementation uses hardcoded parallax values to shift each layer. Ideally, we can upgrade the script to allow for dynamic assignment of the parallax value based on either distance from the camera on the z axis, the layers z position, or based on the ground layer z position
+    //new vals for different
+    private Transform mainCameraTransform;
+    private Vector3 lastCameraPosition;
+    public float ParallaxFactor = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mainCameraTransform = Camera.main.transform;
+        lastCameraPosition = mainCameraTransform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-         move along the x axis based on the maincamera transform. this is multiplied by the layers z position
-         */
-        Camera cam = Camera.main;
 
-        float layerCurrentZ = this.transform.position.z;
-        float layerCurrentY = this.transform.position.y;
-        float layerMultiplier = 1/layerCurrentZ;
-        float parallaxSpeedModifier = this.gameObject.GetComponentInParent<Background_Extender>().ParallaxFactor;//getting from parent script
-        float layerNewX = -cam.transform.position.x * layerMultiplier * parallaxSpeedModifier;//not sure why the - is neccessary atm
-        Vector3 newLayerPosition = new Vector3(layerNewX, layerCurrentY, layerCurrentZ);
+        BruteForceParallax();
+       
+    }
 
-        this.gameObject.transform.position = this.gameObject.transform.parent.transform.position + newLayerPosition;
+    void BruteForceParallax()
+    {
+        Vector3 cameraMovement = mainCameraTransform.position - lastCameraPosition;
+        Vector3 layerPosition = transform.position;
+
+        // Calculate the parallax factor based on the GameObject's z position.
+        //float parallaxFactor = transform.position.z + 1; // Adding 1 to avoid division by zero.
+
+        layerPosition.x += cameraMovement.x * ParallaxFactor;
+        
+
+        transform.position = layerPosition;
+        lastCameraPosition = mainCameraTransform.position;
     }
 }
