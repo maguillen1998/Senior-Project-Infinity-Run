@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceBackgroundChunk: {fileID: 196283789300057250, guid: c140b08e9ca4fbb4ea64812224918ff0, type: 3}
+  ChunksToPlace: 100
+  ParralaxFactor: 2

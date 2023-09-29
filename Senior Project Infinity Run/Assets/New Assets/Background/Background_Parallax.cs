@@ -21,7 +21,7 @@ public class Background_Parallax : MonoBehaviour
         float layerCurrentZ = this.transform.position.z;
         float layerCurrentY = this.transform.position.y;
         float layerMultiplier = 1/layerCurrentZ;
-        float parallaxSpeedModifier = 1f;
+        float parallaxSpeedModifier = this.gameObject.GetComponentInParent<Background_Extender>().ParallaxFactor;//getting from parent script
         float layerNewX = -cam.transform.position.x * layerMultiplier * parallaxSpeedModifier;//not sure why the - is neccessary atm
         Vector3 newLayerPosition = new Vector3(layerNewX, layerCurrentY, layerCurrentZ);
 
