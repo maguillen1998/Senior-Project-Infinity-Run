@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayerCameraBehaviors : MonoBehaviour
+public class FollowPlayerCameraKeepInBox : MonoBehaviour
 {
     //set to null to allow checking if the player has not been found. 
     GameObject Player = null;
@@ -65,33 +65,6 @@ public class FollowPlayerCameraBehaviors : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        
-    }
-    bool IsOutOfBounds(Vector3 cameraPosition)
-    {
-        Vector3 playerPositionRelativeToCamera = Player.transform.position - cameraPosition;//relative pos = player position - camera position
-        cameraPosition = playerPositionRelativeToCamera;
-        if (cameraPosition.x < LeftBoundry)
-        {
-            return true;
-        }
-        if (cameraPosition.x > RightBoundry)
-        {
-            return true;
-        }
-        if (cameraPosition.y < BottomBoundry)
-        {
-            return true;
-        }
-        if (cameraPosition.y > TopBoundry)
-        {
-            return true;
-        }
-
-        return false;
-    }
     void ApplyAdjustments()
     {
         if (PlayerOutOfBoundsRight)
