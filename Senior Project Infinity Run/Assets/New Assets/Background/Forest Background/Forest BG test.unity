@@ -313,6 +313,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3446765844698495072, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
+      propertyPath: TopBoundry
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446765844698495072, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
+      propertyPath: LeftBoundry
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446765844698495072, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
+      propertyPath: RightBoundry
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446765844698495072, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
+      propertyPath: BottomBoundry
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 4036199007214002439, guid: 5fda1b4122acae541b85004687629a2c, type: 3}
       propertyPath: m_RootOrder
       value: 0
