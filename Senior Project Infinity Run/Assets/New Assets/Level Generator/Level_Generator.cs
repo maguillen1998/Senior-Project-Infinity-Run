@@ -35,9 +35,10 @@ public class Level_Generator : MonoBehaviour
         float terrainPlacementHeightVariance = 3f;
         int terrainWidthVariance = 20;
         float terrainCurrentPlacementHeight;//declaring for assignment within the for loop below
-        
 
-        int levelChunkLength = 100;
+        int chasmChance = 25; //%chance to spawn chasm
+
+        int levelChunkLength = 1000;
         Pair<bool, float>[] terrainMap = new Pair<bool, float>[levelChunkLength];//1=terrain placed here 0=empty, float indicates placement height
         int x = 0;
         while (x < levelChunkLength)
@@ -48,10 +49,20 @@ public class Level_Generator : MonoBehaviour
             int terrainWidth = Random.Range(1, terrainWidthVariance);
 
             int widthCounter = 0;
-            while(x < levelChunkLength && widthCounter < terrainWidth)
+            bool shouldPlaceChasm = (Random.Range(1, 100 + 1) <= chasmChance);
+            while (x < levelChunkLength && widthCounter < terrainWidth)
             {
-                terrainMap[x].First = true;
-                terrainMap[x].Second = terrainCurrentPlacementHeight;
+                if(shouldPlaceChasm)
+                {
+                    //do not place anything
+                    terrainMap[x].First = false;
+                    
+                }
+                else
+                {
+                    terrainMap[x].First = true;
+                    terrainMap[x].Second = terrainCurrentPlacementHeight;
+                }              
                 widthCounter++;
                 x++;
             }
@@ -59,10 +70,14 @@ public class Level_Generator : MonoBehaviour
 
         for(int i = 0; i < terrainMap.Length; i++)
         {//instantiate platforms based on terrain map
-            Vector3 position = new Vector3(i, Mathf.RoundToInt(terrainMap[i].Second), 0f);
-            Quaternion rotation = Quaternion.identity;
-            Transform parent = this.gameObject.transform;
-            Instantiate(ReferencePlatfromSquare, position, rotation, parent);
+            if(terrainMap[i].First == true)
+            {
+                Vector3 position = new Vector3(i, Mathf.RoundToInt(terrainMap[i].Second), 0f);
+                Quaternion rotation = Quaternion.identity;
+                Transform parent = this.gameObject.transform;
+                Instantiate(ReferencePlatfromSquare, position, rotation, parent);
+            }
+            
         }
     }
     void SpawnPlatformsRandom()
