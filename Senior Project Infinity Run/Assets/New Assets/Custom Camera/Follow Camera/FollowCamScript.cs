@@ -5,9 +5,8 @@ using UnityEngine;
 public class FollowCamScript : MonoBehaviour
 {
     public GameObject Target;
-    public float SmoothSpeed = 0.125f;
-    public Vector3 Offset = new Vector3(0f,0f,-10f);
-
+    public Vector3 Boundries = new Vector3(5f,1f,-10f);//may want to refactor and remove assignment of z pos from this variable. z should always be -10 to avoid clipping
+    public float CameraMovementSpeedMultiplier = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +19,7 @@ public class FollowCamScript : MonoBehaviour
         
         if(Target != null)
         {
-
-            temp();
+            AdjustCamera();
         }
         else
         {
@@ -30,22 +28,30 @@ public class FollowCamScript : MonoBehaviour
         
     }
 
-    void temp()
+    void AdjustCamera()
     {
-        float leadAmountX = Offset.x;
-        float leadAmountY = Offset.y;
+        float leadAmountX = Boundries.x;
+        float leadAmountY = Boundries.y;
 
         Vector3 direction = Target.GetComponent<Rigidbody2D>().velocity.normalized;
-        direction.z = Offset.z;
-        Vector3 desiredPosition = new Vector3(Target.transform.position.x + direction.x * leadAmountX, Target.transform.position.y + leadAmountY, Offset.z);
+        direction.z = Boundries.z;
+        Vector3 desiredPosition = new Vector3(Target.transform.position.x + direction.x * leadAmountX, Target.transform.position.y + direction.y * leadAmountY, Boundries.z);
 
         MoveCameraSmoothlyTo(desiredPosition);
     }
     void MoveCameraSmoothlyTo(Vector3 desiredPosition)
     {
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, SmoothSpeed);
+        //setting speed based on 
+        float AjustedSmoothSpeedX = (Mathf.Abs(Target.GetComponent<Rigidbody2D>().velocity.x) * CameraMovementSpeedMultiplier) * Time.deltaTime; //based on targer  rigidbody x speed
+        float AjustedSmoothSpeedY = (Mathf.Abs(Target.GetComponent<Rigidbody2D>().velocity.y) * CameraMovementSpeedMultiplier) * Time.deltaTime; //based on targer  rigidbody y speed
 
-        smoothedPosition.z = Offset.z;
+        Vector3 interpolatedX = Vector3.Lerp(transform.position, desiredPosition, AjustedSmoothSpeedX);//interpolate based on x speed
+        Vector3 interpolatedY = Vector3.Lerp(transform.position, desiredPosition, AjustedSmoothSpeedY);//interpolate based on y speed
+
+        //combine x and y from each vector3 to get both x and y combined smoothedposition
+        Vector3 smoothedPosition = new Vector3(interpolatedX.x, interpolatedY.y, transform.position.z);//keep Z position the same
+
+        smoothedPosition.z = Boundries.z;
         transform.position = smoothedPosition;
     }
 }
