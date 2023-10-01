@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4597715888749890047}
   - component: {fileID: 6593636016504151188}
   - component: {fileID: 6114069896685661453}
-  - component: {fileID: 6225306453043821757}
   - component: {fileID: 7889627615518848507}
-  - component: {fileID: 4463244713258217426}
   - component: {fileID: 6809084848271048687}
+  - component: {fileID: 6225306453043821757}
+  - component: {fileID: 4463244713258217426}
   - component: {fileID: 537722696099817887}
   m_Layer: 0
   m_Name: Flying Eye
@@ -110,18 +110,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6225306453043821757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6438676414530316934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaed5913ffe9a494baa704b900fbf381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &7889627615518848507
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -138,23 +126,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.055735968, y: -0.019254237}
   m_Size: {x: 0.121921614, y: 0.17461747}
   m_Direction: 0
---- !u!114 &4463244713258217426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6438676414530316934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4435ae11a415f24aaeae5c87690a45a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 0.5
-  decceleration: 2
-  maxSpeed: 4
-  jumpForce: 6.5
-  gravityScale: 1.5
 --- !u!50 &6809084848271048687
 Rigidbody2D:
   serializedVersion: 4
@@ -176,6 +147,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &6225306453043821757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438676414530316934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaed5913ffe9a494baa704b900fbf381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4463244713258217426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438676414530316934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4435ae11a415f24aaeae5c87690a45a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 0.5
+  decceleration: 2
+  maxSpeed: 4
+  jumpForce: 6.5
+  gravityScale: 1.5
 --- !u!114 &537722696099817887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,3 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe9bbbe7513d6a42ad0ae623064c935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpsSinceGrounded: 0
+  MaxJumps: 10
+  JumpDelay: 0.25
+  TimeOfLastJump: 0
