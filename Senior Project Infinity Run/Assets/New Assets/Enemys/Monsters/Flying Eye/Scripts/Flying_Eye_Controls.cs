@@ -80,6 +80,7 @@ public class Flying_Eye_Controls : MonoBehaviour
         }
         if (UserInput == LeftKey)
         {
+            GetComponent<SpriteRenderer>().flipX = true;
             MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));
         }
         if (UserInput == DownKey)
@@ -88,6 +89,7 @@ public class Flying_Eye_Controls : MonoBehaviour
         }
         if (UserInput == RightKey)
         {
+            GetComponent<SpriteRenderer>().flipX = false;
             MoveMe(new Vector3(1 * movementSpeedMultiplier,0, 0));
         }
 
@@ -96,36 +98,8 @@ public class Flying_Eye_Controls : MonoBehaviour
 
     void MoveMe(Vector3 direction)
     {
-        CapsuleCollider2D mainCollider = gameObject.GetComponent<CapsuleCollider2D>();
-        Animator myAnim = gameObject.GetComponent<Animator>();
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
         int moveDirection = Mathf.RoundToInt( direction.x);//temporary solution
-
-        Bounds colliderBounds = mainCollider.bounds;
-        float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
-        Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
-
-        // Check if player is grounded
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
-
-        //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
-        isGrounded = false;
-        //myAnim.SetBool("jumping", true);
-        if (colliders.Length > 0)
-        {
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                if (colliders[i] != mainCollider)
-                {
-                    isGrounded = true;
-                    Stats.JumpsSinceGrounded = 0;
-                    //myAnim.SetBool("jumping", false);
-                    break;
-                }
-            }
-        }
-
-
 
         // Apply movement acceleration to velocity
         //if acceleration plus current velocity > max speed, set velocity to max speed
@@ -194,6 +168,35 @@ public class Flying_Eye_Controls : MonoBehaviour
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
         r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
         Stats.TimeOfLastJump = Time.fixedTime;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        CapsuleCollider2D mainCollider = gameObject.GetComponent<CapsuleCollider2D>();
+        Bounds colliderBounds = mainCollider.bounds;
+        float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
+        Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
+
+        // Check if player is grounded
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
+
+        //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
+        isGrounded = false;
+        //myAnim.SetBool("jumping", true);
+        if (colliders.Length > 0)
+        {
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i] != mainCollider)
+                {
+                    isGrounded = true;
+                    Stats.JumpsSinceGrounded = 0;
+                    //myAnim.SetBool("jumping", false);
+                    break;
+                }
+            }
+        }
     }
 
 }

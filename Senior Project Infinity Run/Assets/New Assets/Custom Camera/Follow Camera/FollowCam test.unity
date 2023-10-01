@@ -261,6 +261,10 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6351836990400860967, guid: 2b5d461d14b5e3f47b52276ded187ba7, type: 3}
+      propertyPath: Boundries.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351836990400860967, guid: 2b5d461d14b5e3f47b52276ded187ba7, type: 3}
       propertyPath: SmoothSpeed
       value: 1
       objectReference: {fileID: 0}
@@ -332,6 +336,14 @@ PrefabInstance:
     - target: {fileID: 4597715888749890047, guid: 976b816ee6648b8478b33da349c32b8d, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597715888749890047, guid: 976b816ee6648b8478b33da349c32b8d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597715888749890047, guid: 976b816ee6648b8478b33da349c32b8d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4597715888749890047, guid: 976b816ee6648b8478b33da349c32b8d, type: 3}
       propertyPath: m_LocalPosition.x
