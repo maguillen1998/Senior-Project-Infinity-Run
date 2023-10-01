@@ -6,7 +6,7 @@ public class Flying_Eye_Stats : MonoBehaviour
 {
     public int JumpsSinceGrounded = 0;
     public int MaxJumps = 10;
-    public float JumpDelay = 0.1f;
+    public float JumpDelay = 0.25f;
     public float TimeOfLastJump = 0;
 
     public float TimeSinceLastJump()

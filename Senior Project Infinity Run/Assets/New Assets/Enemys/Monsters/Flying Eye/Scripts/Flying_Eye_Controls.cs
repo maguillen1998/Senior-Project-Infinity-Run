@@ -2,14 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+struct Booleans
+{
+    public bool shouldJumpNextFixedUpdate;
+    public bool shouldMoveRightNextFixedUpdate;
+    public bool shouldMoveLeftNextFixedUpdate;
+    public bool shouldMoveDownNextFixedUpdate;//no bound functionality atm
+
+    public void Initialize()
+    {
+        shouldJumpNextFixedUpdate = false;
+        shouldMoveRightNextFixedUpdate = false;
+        shouldMoveLeftNextFixedUpdate = false;
+        shouldMoveDownNextFixedUpdate = false;
+}
+}
+
 public class Flying_Eye_Controls : MonoBehaviour
 {
-    string UserInput = "";
 
     string UpKey = "w";
     string DownKey = "s";
     string LeftKey = "a";
     string RightKey = "d";
+
+    Booleans controls;
+
 
     Flying_Eye_Animator_Script AnimatorScript;
     Flying_Eye_Stats Stats;
@@ -25,6 +43,7 @@ public class Flying_Eye_Controls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controls.Initialize();
         AnimatorScript = gameObject.GetComponent<Flying_Eye_Animator_Script>();
         gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//might be unneccessary when using this line in update
         Stats = gameObject.GetComponent<Flying_Eye_Stats>();
@@ -45,22 +64,30 @@ public class Flying_Eye_Controls : MonoBehaviour
 
     void GetUserInput()
     {
-        UserInput = "";
-        if (Input.GetKey(UpKey))
+        //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
+        if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
-            UserInput = UpKey;
+  
+            controls.shouldJumpNextFixedUpdate = true;
         }
-        else if (Input.GetKey(LeftKey))
+
+        //for these getkey checks, we need to set reset each boolean before assinging them again.
+        controls.shouldMoveLeftNextFixedUpdate = false;
+        if (Input.GetKey(LeftKey))
         {
-            UserInput = LeftKey;
+            controls.shouldMoveLeftNextFixedUpdate = true;
         }
-        else if (Input.GetKey(DownKey))
+
+        controls.shouldMoveDownNextFixedUpdate = false;
+        if (Input.GetKey(DownKey))
         {
-            UserInput = DownKey;
+            controls.shouldMoveDownNextFixedUpdate = true;
         }
-        else if (Input.GetKey(RightKey))
+
+        controls.shouldMoveRightNextFixedUpdate = false;
+        if (Input.GetKey(RightKey))
         {
-            UserInput = RightKey;
+            controls.shouldMoveRightNextFixedUpdate = true;
         }
 
         
@@ -69,25 +96,27 @@ public class Flying_Eye_Controls : MonoBehaviour
     void ApplyUserInput()
     {
         float movementSpeedMultiplier = 1;
-        if(UserInput == UpKey)
+        if(controls.shouldJumpNextFixedUpdate)
         {
             //jumping
             if (Stats.JumpsSinceGrounded < Stats.MaxJumps && Stats.TimeSinceLastJump() > Stats.JumpDelay)
             {
-                Debug.Log("jumps applying: " + Stats.JumpsSinceGrounded);
                 Jump();    
             }
+            controls.shouldJumpNextFixedUpdate = false;
         }
-        if (UserInput == LeftKey)
+        if (controls.shouldMoveLeftNextFixedUpdate)
         {
+            GetComponent<SpriteRenderer>().flipX = true;
             MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));
         }
-        if (UserInput == DownKey)
+        if (controls.shouldMoveDownNextFixedUpdate)
         {
-            
+            //no behaviors atm
         }
-        if (UserInput == RightKey)
+        if (controls.shouldMoveRightNextFixedUpdate)
         {
+            GetComponent<SpriteRenderer>().flipX = false;
             MoveMe(new Vector3(1 * movementSpeedMultiplier,0, 0));
         }
 
@@ -96,36 +125,8 @@ public class Flying_Eye_Controls : MonoBehaviour
 
     void MoveMe(Vector3 direction)
     {
-        CapsuleCollider2D mainCollider = gameObject.GetComponent<CapsuleCollider2D>();
-        Animator myAnim = gameObject.GetComponent<Animator>();
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
         int moveDirection = Mathf.RoundToInt( direction.x);//temporary solution
-
-        Bounds colliderBounds = mainCollider.bounds;
-        float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
-        Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
-
-        // Check if player is grounded
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
-
-        //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
-        isGrounded = false;
-        //myAnim.SetBool("jumping", true);
-        if (colliders.Length > 0)
-        {
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                if (colliders[i] != mainCollider)
-                {
-                    isGrounded = true;
-                    Stats.JumpsSinceGrounded = 0;
-                    //myAnim.SetBool("jumping", false);
-                    break;
-                }
-            }
-        }
-
-
 
         // Apply movement acceleration to velocity
         //if acceleration plus current velocity > max speed, set velocity to max speed
@@ -194,6 +195,38 @@ public class Flying_Eye_Controls : MonoBehaviour
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
         r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
         Stats.TimeOfLastJump = Time.fixedTime;
+
+
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        CapsuleCollider2D mainCollider = gameObject.GetComponent<CapsuleCollider2D>();
+        Bounds colliderBounds = mainCollider.bounds;
+        float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
+        Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
+
+        // Check if player is grounded
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
+
+        //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
+        isGrounded = false;
+        //myAnim.SetBool("jumping", true);
+        if (colliders.Length > 0)
+        {
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i] != mainCollider)
+                {
+                    isGrounded = true;
+                    Stats.JumpsSinceGrounded = 0;
+                    //myAnim.SetBool("jumping", false);
+                    break;
+                }
+            }
+        }
     }
 
 }
