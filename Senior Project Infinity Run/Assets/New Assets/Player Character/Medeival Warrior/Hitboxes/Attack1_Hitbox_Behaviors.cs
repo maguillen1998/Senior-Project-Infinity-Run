@@ -12,6 +12,8 @@ public class Attack1_Hitbox_Behaviors : MonoBehaviour
     }
     void Hit(GameObject target)
     {
-        target.GetComponent<Testing_Dummy_Behaviors>().GetHit(AttackDamage);
+        //getting the base monster class allows us to call the same method on any monster we hit without needing to reference the derived script directly.
+        //override on the derived class will allow it to still give us the correct gethit method even after changing it in the derived class.
+        target.gameObject.GetComponent<Base_Monster_Behaviors>().GetHit(AttackDamage);
     }
 }
