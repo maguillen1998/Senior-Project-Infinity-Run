@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3155373646799259951}
   - component: {fileID: 3236112392766862654}
+  - component: {fileID: 690847910957249188}
   m_Layer: 0
   m_Name: Attack1
   m_TagString: Untagged
@@ -73,6 +74,18 @@ PolygonCollider2D:
       - {x: 1.4133846, y: -0.2488948}
       - {x: 1.6658334, y: 0.09938879}
       - {x: 1.6035206, y: 0.52177715}
+--- !u!114 &690847910957249188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534438704526071201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1969ec15e4731f142997c9cac97cb207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5729407286110883716
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4867e605369420842a924cb462d92bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Attack1Hitbox: {fileID: 3534438704526071201}
 --- !u!114 &3542404962595245904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,12 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd216381c316704bb43e9038425f33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack1Collider: {fileID: 3534438704526071201}
   acceleration: 0.5
   decceleration: 2
   maxSpeed: 4
   jumpForce: 6.5
   gravityScale: 1
+  isGrounded: 0
 --- !u!114 &6762921991155230627
 MonoBehaviour:
   m_ObjectHideFlags: 0

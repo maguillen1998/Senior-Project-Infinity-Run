@@ -26,13 +26,6 @@ struct MedievalWarriorBooleans
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Medieval_Warrior_Movement : MonoBehaviour
 {
-    //attack stuff
-    public GameObject Attack1Collider;
-    bool ShouldAttack1 = false;
-    bool Attack1Running = false;
-
-    string Attack1Key = "space";
-    //attack stuff
 
     string UpKey = "w";
     string DownKey = "s";
@@ -54,11 +47,10 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     public float jumpForce = 6.5f;
     public float gravityScale = 1.5f;
 
-    bool isGrounded = false;
+    public bool isGrounded = false;
     // Start is called before the first frame update
     void Start()
     {
-        Attack1Collider.SetActive(false);
 
         controls.Initialize();
         AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
@@ -81,54 +73,6 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     {
         ApplyUserInput();
 
-        UpdateAnimations();
-    }
-
-    void UpdateAnimations()
-    {
-        if (Attack1Running)
-        {
-            return;
-        }
-        if (ShouldAttack1)
-        {
-            AnimatorScript.PlayAttack1();
-            ShouldAttack1 = false;
-            Attack1Running = true;
-            return;
-        }
-        
-
-        if(r2d.velocity.x == 0 && r2d.velocity.y == 0)
-        {
-            AnimatorScript.PlayIdle();
-        }
-
-        if(r2d.velocity.y < 0)
-        {
-            AnimatorScript.PlayFall();
-        }
-
-        if(r2d.velocity.y > 0)
-        {
-            AnimatorScript.PlayJump();
-        }
-
-        if(isGrounded && Mathf.Abs(r2d.velocity.x) > 0)
-        {
-            AnimatorScript.PlayRun();
-        }
-
-    }
-
-    void ToggleAttack1Collider() {
-        Attack1Collider.SetActive(true);
-    }
-
-    void DisableAttack1Running()
-    {
-        Attack1Running = false;
-        Attack1Collider.SetActive(false);
     }
 
     void GetUserInput()
@@ -156,14 +100,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (Input.GetKey(RightKey))
         {
             controls.shouldMoveRightNextFixedUpdate = true;
-        }
-
-        if (Input.GetKeyDown(Attack1Key))
-        {
-            ShouldAttack1 = true;
-        }
-
-
+        }      
     }
 
     void ApplyUserInput()
@@ -297,11 +234,4 @@ public class Medieval_Warrior_Movement : MonoBehaviour
             }
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("attacked: " + collision.gameObject.name);
-        //collision.gameObject.SetActive(false);
-    }
-
 }
