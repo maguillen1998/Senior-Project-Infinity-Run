@@ -121,8 +121,7 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
         }
 
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName(Attack1))
-        {
-            Debug.Log("attacking, return");
+        {//return to allow the attack animation to finish
             return;
         }
 
