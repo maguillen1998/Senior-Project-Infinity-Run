@@ -19,16 +19,6 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
     string Jump = "Jump";
     string Fall = "Fall";
 
-    bool ISAttacking1 = false;
-    bool ISAttacking2 = false;
-    bool ISAttacking3 = false;
-    bool ISJumping = false;
-    bool ISFalling = false;
-    bool ISTakingHit = false;
-    bool ISDead = false;
-    bool ISRunning = false;
-    bool ISIdle = false;
-
     //Trigger names
     string Attacking1Trigger = "Attacking1";
 
@@ -56,21 +46,17 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
     public void PlayIdle()
     {
         Anim.Play(Idle);
-        ISIdle = true;
+
     }
-
-
 
     public void PlayAttack1()
     {
-        ISAttacking1 = true;
         Anim.Play(Attack1);
-                     
     }
     
     public void ResetAttack1()
     {
-        ISAttacking1 = false;
+        PlayIdle();
     }
     
 
@@ -89,77 +75,75 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
     public void PlayAttack2()
     {
         Anim.Play(Attack2);
-        ISAttacking2 = true;
+
     }
     public void PlayAttack3()
     {
         Anim.Play(Attack3);
-        ISAttacking3 = true;
+
     }
 
     public void PlayDeath()
     {
         Anim.Play(Death);
-        ISDead = true;
+
     }
 
     public void PlayTakeHit()
     {
         Anim.Play(Take_Hit);
-        ISTakingHit = true;
+
     }
 
     public void PlayRun()
     {
         Anim.Play(Run);
-        ISRunning = true;
+ 
     }
 
     public void PlayJump()
     {
         Anim.Play(Jump);
-        ISJumping = true;
+
     }
 
     public void PlayFall()
     {
         Anim.Play(Fall);
-        ISFalling = true;
+
     }
 
     void UpdateAnimations()
     {
-        Debug.Log("attacking trigger: " + ISAttacking1);
-       
-
-        
-
-        if (!ISAttacking1)
+        if (Input.GetKey("space"))
         {
-            if (Input.GetKeyDown("space"))
-            {
-                PlayAttack1();
-               
-            }
-            if (r2d.velocity.x == 0 && r2d.velocity.y == 0)
-            {
-                PlayIdle();
-            }
+            PlayAttack1();              
+        }
 
-            if (r2d.velocity.y < 0)
-            {
-                PlayFall();
-            }
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName(Attack1))
+        {
+            Debug.Log("attacking, return");
+            return;
+        }
 
-            if (r2d.velocity.y > 0)
-            {
-                PlayJump();
-            }
+        if (r2d.velocity.x == 0 && r2d.velocity.y == 0)
+        {
+            PlayIdle();
+        }
 
-            if (MovementController.isGrounded && Mathf.Abs(r2d.velocity.x) > 0)
-            {
-                PlayRun();
-            }
+        if (r2d.velocity.y < 0)
+        {
+            PlayFall();
+        }
+
+        if (r2d.velocity.y > 0)
+        {
+            PlayJump();
+        }
+
+        if (MovementController.isGrounded && Mathf.Abs(r2d.velocity.x) > 0)
+        {
+            PlayRun();
         }
        
     }
