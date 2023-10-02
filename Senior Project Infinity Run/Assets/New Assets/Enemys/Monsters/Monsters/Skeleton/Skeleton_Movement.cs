@@ -9,7 +9,7 @@ using UnityEngine;
 [RequireComponent(typeof(Skeleton_Stats))]
 public class Skeleton_Movement : MonoBehaviour
 {
-    private struct Skeleton_Movement_Booleans
+    public struct Skeleton_Movement_Booleans
     {
 
 
@@ -31,7 +31,7 @@ public class Skeleton_Movement : MonoBehaviour
     string LeftKey = "a";
     string RightKey = "d";
 
-    Skeleton_Movement_Booleans controls;
+    public Skeleton_Movement_Booleans controls;
 
 
     Rigidbody2D r2d;
