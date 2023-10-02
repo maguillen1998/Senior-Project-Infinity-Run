@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-struct FlyingEyeBooleans
+struct MedievalWarriorBooleans
 {
     public bool shouldJumpNextFixedUpdate;
     public bool shouldMoveRightNextFixedUpdate;
@@ -15,22 +15,25 @@ struct FlyingEyeBooleans
         shouldMoveRightNextFixedUpdate = false;
         shouldMoveLeftNextFixedUpdate = false;
         shouldMoveDownNextFixedUpdate = false;
-}
+    }
 }
 
-public class Flying_Eye_Controls : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
+public class Medieval_Warrior_Movement : MonoBehaviour
 {
-
     string UpKey = "w";
     string DownKey = "s";
     string LeftKey = "a";
     string RightKey = "d";
 
-    FlyingEyeBooleans controls;
+    MedievalWarriorBooleans controls;
 
 
-    Flying_Eye_Animator_Script AnimatorScript;
-    Flying_Eye_Stats Stats;
+    Rigidbody2D r2d;
+
+    Medieval_Warrior_Animator_Controller AnimatorScript;
+    Medieval_Warrior_Stats Stats;
 
     //acceleration and decceleration are both per fixedupdate not per second
     public float acceleration = 0.5f;
@@ -44,9 +47,13 @@ public class Flying_Eye_Controls : MonoBehaviour
     void Start()
     {
         controls.Initialize();
-        AnimatorScript = gameObject.GetComponent<Flying_Eye_Animator_Script>();
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//might be unneccessary when using this line in update
-        Stats = gameObject.GetComponent<Flying_Eye_Stats>();
+        AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
+
+        r2d = gameObject.GetComponent<Rigidbody2D>();
+        r2d.gravityScale = gravityScale;//might be unneccessary when using this line in update
+        r2d.freezeRotation = true;
+
+        Stats = gameObject.GetComponent<Medieval_Warrior_Stats>();
     }
 
     // Update is called once per frame
@@ -59,7 +66,33 @@ public class Flying_Eye_Controls : MonoBehaviour
     void FixedUpdate()
     {
         ApplyUserInput();
-        
+
+        UpdateAnimations();
+    }
+
+    void UpdateAnimations()
+    {
+
+        if(r2d.velocity.x == 0 && r2d.velocity.y == 0)
+        {
+            AnimatorScript.PlayIdle();
+        }
+
+        if(r2d.velocity.y < 0)
+        {
+            AnimatorScript.PlayFall();
+        }
+
+        if(r2d.velocity.y > 0)
+        {
+            AnimatorScript.PlayJump();
+        }
+
+        if(isGrounded && Mathf.Abs(r2d.velocity.x) > 0)
+        {
+            AnimatorScript.PlayRun();
+        }
+
     }
 
     void GetUserInput()
@@ -67,7 +100,7 @@ public class Flying_Eye_Controls : MonoBehaviour
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
-  
+
             controls.shouldJumpNextFixedUpdate = true;
         }
 
@@ -90,25 +123,25 @@ public class Flying_Eye_Controls : MonoBehaviour
             controls.shouldMoveRightNextFixedUpdate = true;
         }
 
-        
+
     }
 
     void ApplyUserInput()
     {
         float movementSpeedMultiplier = 1;
-        if(controls.shouldJumpNextFixedUpdate)
+        if (controls.shouldJumpNextFixedUpdate)
         {
             //jumping
             if (Stats.JumpsSinceGrounded < Stats.MaxJumps && Stats.TimeSinceLastJump() > Stats.JumpDelay)
             {
-                Jump();    
+                Jump();
             }
             controls.shouldJumpNextFixedUpdate = false;
         }
         if (controls.shouldMoveLeftNextFixedUpdate)
         {
             GetComponent<SpriteRenderer>().flipX = true;
-            MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));
+            MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));          
         }
         if (controls.shouldMoveDownNextFixedUpdate)
         {
@@ -117,16 +150,15 @@ public class Flying_Eye_Controls : MonoBehaviour
         if (controls.shouldMoveRightNextFixedUpdate)
         {
             GetComponent<SpriteRenderer>().flipX = false;
-            MoveMe(new Vector3(1 * movementSpeedMultiplier,0, 0));
+            MoveMe(new Vector3(1 * movementSpeedMultiplier, 0, 0));
         }
 
-        
     }
 
     void MoveMe(Vector3 direction)
     {
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
-        int moveDirection = Mathf.RoundToInt( direction.x);//temporary solution
+        int moveDirection = Mathf.RoundToInt(direction.x);//temporary solution
 
         // Apply movement acceleration to velocity
         //if acceleration plus current velocity > max speed, set velocity to max speed
@@ -196,8 +228,7 @@ public class Flying_Eye_Controls : MonoBehaviour
         r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
         Stats.TimeOfLastJump = Time.fixedTime;
 
-
-        
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -213,7 +244,6 @@ public class Flying_Eye_Controls : MonoBehaviour
 
         //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
         isGrounded = false;
-        //myAnim.SetBool("jumping", true);
         if (colliders.Length > 0)
         {
             for (int i = 0; i < colliders.Length; i++)
@@ -221,8 +251,7 @@ public class Flying_Eye_Controls : MonoBehaviour
                 if (colliders[i] != mainCollider)
                 {
                     isGrounded = true;
-                    Stats.JumpsSinceGrounded = 0;
-                    //myAnim.SetBool("jumping", false);
+                    Stats.JumpsSinceGrounded = 0;                   
                     break;
                 }
             }
