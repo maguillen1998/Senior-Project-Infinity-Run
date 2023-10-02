@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//utility struct
 struct MedievalWarriorBooleans
 {
+    
+
     public bool shouldJumpNextFixedUpdate;
     public bool shouldMoveRightNextFixedUpdate;
     public bool shouldMoveLeftNextFixedUpdate;
@@ -18,10 +21,12 @@ struct MedievalWarriorBooleans
     }
 }
 
+//class
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Medieval_Warrior_Movement : MonoBehaviour
 {
+
     string UpKey = "w";
     string DownKey = "s";
     string LeftKey = "a";
@@ -42,10 +47,11 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     public float jumpForce = 6.5f;
     public float gravityScale = 1.5f;
 
-    bool isGrounded = false;
+    public bool isGrounded = false;
     // Start is called before the first frame update
     void Start()
     {
+
         controls.Initialize();
         AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
 
@@ -67,32 +73,6 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     {
         ApplyUserInput();
 
-        UpdateAnimations();
-    }
-
-    void UpdateAnimations()
-    {
-
-        if(r2d.velocity.x == 0 && r2d.velocity.y == 0)
-        {
-            AnimatorScript.PlayIdle();
-        }
-
-        if(r2d.velocity.y < 0)
-        {
-            AnimatorScript.PlayFall();
-        }
-
-        if(r2d.velocity.y > 0)
-        {
-            AnimatorScript.PlayJump();
-        }
-
-        if(isGrounded && Mathf.Abs(r2d.velocity.x) > 0)
-        {
-            AnimatorScript.PlayRun();
-        }
-
     }
 
     void GetUserInput()
@@ -100,7 +80,6 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
-
             controls.shouldJumpNextFixedUpdate = true;
         }
 
@@ -121,9 +100,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (Input.GetKey(RightKey))
         {
             controls.shouldMoveRightNextFixedUpdate = true;
-        }
-
-
+        }      
     }
 
     void ApplyUserInput()
@@ -257,5 +234,4 @@ public class Medieval_Warrior_Movement : MonoBehaviour
             }
         }
     }
-
 }
