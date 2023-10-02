@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 0.5
-  decceleration: 2
+  decceleration: 3
   maxSpeed: 4
   jumpForce: 6.5
   gravityScale: 1

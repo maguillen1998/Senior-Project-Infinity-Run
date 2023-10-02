@@ -37,7 +37,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     Rigidbody2D r2d;
 
-    Medieval_Warrior_Animator_Controller AnimatorScript;
+    //Medieval_Warrior_Animator_Controller AnimatorScript;
     Medieval_Warrior_Stats Stats;
 
     //acceleration and decceleration are both per fixedupdate not per second
@@ -53,7 +53,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     {
 
         controls.Initialize();
-        AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
+        //AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
 
         r2d = gameObject.GetComponent<Rigidbody2D>();
         r2d.gravityScale = gravityScale;//might be unneccessary when using this line in update
