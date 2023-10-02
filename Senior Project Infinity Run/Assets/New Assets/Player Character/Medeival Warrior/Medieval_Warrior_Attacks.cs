@@ -24,10 +24,7 @@ public class Medieval_Warrior_Attacks : MonoBehaviour
 
     void GetUserInput()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            DoAttack1();
-        }
+       
     }
 
     private void Initialize()

@@ -351,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8051079088187382417, guid: 2b5d461d14b5e3f47b52276ded187ba7, type: 3}
       propertyPath: orthographic size
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9219621289464478747, guid: 2b5d461d14b5e3f47b52276ded187ba7, type: 3}
       propertyPath: m_Name
@@ -488,10 +488,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3236112392766862654, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -535,14 +531,6 @@ PrefabInstance:
     - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3534438704526071201, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3542404962595245904, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: decceleration
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_Name
