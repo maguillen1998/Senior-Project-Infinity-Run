@@ -48,6 +48,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     public float jumpForce = 6.5f;
     public float gravityScale = 1.5f;
 
+    [System.NonSerialized]
     public bool isGrounded = false;
     // Start is called before the first frame update
     void Start()

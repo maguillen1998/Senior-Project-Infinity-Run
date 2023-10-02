@@ -26,4 +26,6 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     {//should move into a discreet attack script later
         SA.PlayAttack1();
     }
+
+    
 }
