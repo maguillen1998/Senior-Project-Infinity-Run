@@ -54,7 +54,7 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
         Anim.Play(Attack1);
     }
     
-    public void ResetAttack1()
+    public void ResetAttack()
     {
         PlayIdle();
     }
