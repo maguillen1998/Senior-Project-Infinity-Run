@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class Attack1_Hitbox_Behaviors : MonoBehaviour
 {
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        //tell object that you hit them.
-
-        //Hit(collision.gameObject);
-    }
+    int AttackDamage = 2;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //tell object that you hit them.
-
         Hit(collision.gameObject);
     }
     void Hit(GameObject target)
     {
-        
-        target.GetComponent<testing_dummy_behavior>().OnHit();
+        target.GetComponent<Testing_Dummy_Behaviors>().GetHit(AttackDamage);
     }
 }

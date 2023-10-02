@@ -88,7 +88,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.25
-    functionName: ResetAttack1
+    functionName: ResetAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
