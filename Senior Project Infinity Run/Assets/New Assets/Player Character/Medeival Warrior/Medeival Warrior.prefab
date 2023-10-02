@@ -11,6 +11,11 @@ GameObject:
   - component: {fileID: 3278119380877314449}
   - component: {fileID: 2988084024726692830}
   - component: {fileID: 7688872196768187417}
+  - component: {fileID: 926032860750431932}
+  - component: {fileID: 3542404962595245904}
+  - component: {fileID: 6762921991155230627}
+  - component: {fileID: 3408092070892773972}
+  - component: {fileID: 3654371134247308818}
   m_Layer: 0
   m_Name: Medeival Warrior
   m_TagString: Untagged
@@ -95,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 5729407286110883716}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1758558baedfd24ca8aeb7ca69e90e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -105,3 +110,85 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &926032860750431932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4867e605369420842a924cb462d92bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3542404962595245904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd216381c316704bb43e9038425f33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 0.5
+  decceleration: 2
+  maxSpeed: 4
+  jumpForce: 6.5
+  gravityScale: 1
+--- !u!114 &6762921991155230627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a20234b648fbf49b5308e569adda60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpsSinceGrounded: 0
+  MaxJumps: 10
+  JumpDelay: 0.25
+  TimeOfLastJump: 0
+--- !u!50 &3408092070892773972
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &3654371134247308818
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.2473669, y: 0.3662841}
+  m_Direction: 0
