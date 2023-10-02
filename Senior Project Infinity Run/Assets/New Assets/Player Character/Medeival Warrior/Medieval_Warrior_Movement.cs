@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//utility struct
 struct MedievalWarriorBooleans
 {
+    
+
     public bool shouldJumpNextFixedUpdate;
     public bool shouldMoveRightNextFixedUpdate;
     public bool shouldMoveLeftNextFixedUpdate;
@@ -18,10 +21,19 @@ struct MedievalWarriorBooleans
     }
 }
 
+//class
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Medieval_Warrior_Movement : MonoBehaviour
 {
+    //attack stuff
+    public GameObject Attack1Collider;
+    bool ShouldAttack1 = false;
+    bool Attack1Running = false;
+
+    string Attack1Key = "space";
+    //attack stuff
+
     string UpKey = "w";
     string DownKey = "s";
     string LeftKey = "a";
@@ -46,6 +58,8 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Attack1Collider.SetActive(false);
+
         controls.Initialize();
         AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
 
@@ -72,6 +86,18 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     void UpdateAnimations()
     {
+        if (Attack1Running)
+        {
+            return;
+        }
+        if (ShouldAttack1)
+        {
+            AnimatorScript.PlayAttack1();
+            ShouldAttack1 = false;
+            Attack1Running = true;
+            return;
+        }
+        
 
         if(r2d.velocity.x == 0 && r2d.velocity.y == 0)
         {
@@ -95,12 +121,21 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     }
 
+    void ToggleAttack1Collider() {
+        Attack1Collider.SetActive(true);
+    }
+
+    void DisableAttack1Running()
+    {
+        Attack1Running = false;
+        Attack1Collider.SetActive(false);
+    }
+
     void GetUserInput()
     {
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
-
             controls.shouldJumpNextFixedUpdate = true;
         }
 
@@ -121,6 +156,11 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (Input.GetKey(RightKey))
         {
             controls.shouldMoveRightNextFixedUpdate = true;
+        }
+
+        if (Input.GetKeyDown(Attack1Key))
+        {
+            ShouldAttack1 = true;
         }
 
 
@@ -256,6 +296,12 @@ public class Medieval_Warrior_Movement : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("attacked: " + collision.gameObject.name);
+        //collision.gameObject.SetActive(false);
     }
 
 }
