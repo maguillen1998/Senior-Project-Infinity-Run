@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
 //class
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
-public class Medieval_Warrior_Movement : MonoBehaviour
+[RequireComponent(typeof(Skeleton_Stats))]
+public class Skeleton_Movement : MonoBehaviour
 {
-
-    //utility struct
-    private struct MedievalWarriorBooleans
+    public struct Skeleton_Movement_Booleans
     {
+
+
         public bool shouldJumpNextFixedUpdate;
         public bool shouldMoveRightNextFixedUpdate;
         public bool shouldMoveLeftNextFixedUpdate;
@@ -26,20 +26,16 @@ public class Medieval_Warrior_Movement : MonoBehaviour
             shouldMoveDownNextFixedUpdate = false;
         }
     }
-
-
     string UpKey = "w";
     string DownKey = "s";
     string LeftKey = "a";
     string RightKey = "d";
 
-    MedievalWarriorBooleans controls;
+    public Skeleton_Movement_Booleans controls;
 
 
     Rigidbody2D r2d;
-
-    //Medieval_Warrior_Animator_Controller AnimatorScript;
-    Medieval_Warrior_Stats Stats;
+    Skeleton_Stats Stats;
 
     //acceleration and decceleration are both per fixedupdate not per second
     public float acceleration = 0.5f;
@@ -55,13 +51,12 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     {
 
         controls.Initialize();
-        //AnimatorScript = gameObject.GetComponent<Medieval_Warrior_Animator_Controller>();
 
         r2d = gameObject.GetComponent<Rigidbody2D>();
         r2d.gravityScale = gravityScale;//might be unneccessary when using this line in update
         r2d.freezeRotation = true;
 
-        Stats = gameObject.GetComponent<Medieval_Warrior_Stats>();
+        Stats = gameObject.GetComponent<Skeleton_Stats>();
     }
 
     // Update is called once per frame
@@ -82,7 +77,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
-            controls.shouldJumpNextFixedUpdate = true;
+            //controls.shouldJumpNextFixedUpdate = true; // skeletons cant jump
         }
 
         //for these getkey checks, we need to set reset each boolean before assinging them again.
@@ -102,7 +97,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (Input.GetKey(RightKey))
         {
             controls.shouldMoveRightNextFixedUpdate = true;
-        }      
+        }
     }
 
     void ApplyUserInput()
@@ -120,7 +115,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (controls.shouldMoveLeftNextFixedUpdate)
         {
             GetComponent<SpriteRenderer>().flipX = true;
-            MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));          
+            MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));
         }
         if (controls.shouldMoveDownNextFixedUpdate)
         {
@@ -210,6 +205,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         isGrounded = false;
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -230,7 +226,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
                 if (colliders[i] != mainCollider)
                 {
                     isGrounded = true;
-                    Stats.JumpsSinceGrounded = 0;                   
+                    Stats.JumpsSinceGrounded = 0;
                     break;
                 }
             }
