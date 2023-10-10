@@ -38,6 +38,7 @@ public abstract class Base_Monster_Behaviors : MonoBehaviour, IMonster
     {
         Debug.Log("I Died and will be destroyed: " + gameObject.name);
 
+
         gameObject.SetActive(false);
         Destroy(gameObject);
 

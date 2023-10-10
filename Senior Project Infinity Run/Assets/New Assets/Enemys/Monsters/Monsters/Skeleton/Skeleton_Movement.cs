@@ -62,8 +62,8 @@ public class Skeleton_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
-        GetUserInput();
+        //gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
+        //GetUserInput();
     }
 
     void FixedUpdate()

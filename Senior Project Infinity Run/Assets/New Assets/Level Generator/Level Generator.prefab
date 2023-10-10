@@ -48,4 +48,8 @@ MonoBehaviour:
   ReferencePlatfromWide: {fileID: 0}
   ReferenceSpike: {fileID: 421480931190829124, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
   ReferenceCoin: {fileID: 3635187267203447749, guid: b3c1ae3329861a14cb72eb6b87c111a1, type: 3}
+  ReferenceSkeleton: {fileID: 8663788536901220718, guid: 6a3de210335224a4082027a624dc3060, type: 3}
+  ReferenceGoblin: {fileID: 7032057207122155947, guid: b1e317b147015c74f8465c53c8672966, type: 3}
+  ReferenceFlyingEye: {fileID: 6438676414530316934, guid: 976b816ee6648b8478b33da349c32b8d, type: 3}
+  ReferenceMushroom: {fileID: 7167517889738726023, guid: e29f8cdb341f8d44e9fe10ed02cf598a, type: 3}
   MainCamera: {fileID: 0}
