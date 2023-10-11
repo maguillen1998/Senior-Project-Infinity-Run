@@ -79,6 +79,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     void GetUserInput()
     {
+        controls.shouldMoveRightNextFixedUpdate = true;
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
@@ -89,19 +90,19 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         controls.shouldMoveLeftNextFixedUpdate = false;
         if (Input.GetKey(LeftKey))
         {
-            controls.shouldMoveLeftNextFixedUpdate = true;
+            //controls.shouldMoveLeftNextFixedUpdate = true;
         }
 
         controls.shouldMoveDownNextFixedUpdate = false;
         if (Input.GetKey(DownKey))
         {
-            controls.shouldMoveDownNextFixedUpdate = true;
+            //controls.shouldMoveDownNextFixedUpdate = true;
         }
 
-        controls.shouldMoveRightNextFixedUpdate = false;
+        //controls.shouldMoveRightNextFixedUpdate = false;
         if (Input.GetKey(RightKey))
         {
-            controls.shouldMoveRightNextFixedUpdate = true;
+            //controls.shouldMoveRightNextFixedUpdate = true;
         }      
     }
 

@@ -10,6 +10,7 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     float TimeOfLastAttack = 0f;
     float AttackDelaySeconds = 1f;
     // Start is called before the first frame update
+    bool dead = false;
     public override void Start()
     {
         SA = GetComponent<Skeleton_Animation>();
@@ -23,7 +24,11 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     {
         //SM.controls.shouldMoveRightNextFixedUpdate = true;
        
-        if(Time.realtimeSinceStartup - TimeOfLastAttack > AttackDelaySeconds)
+        if(CurrentHealth <= 0)
+        {
+            Die();
+        }
+        if(!dead && Time.realtimeSinceStartup - TimeOfLastAttack > AttackDelaySeconds)
         {
             Attack();
             TimeOfLastAttack = Time.realtimeSinceStartup;
@@ -35,5 +40,15 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
         SA.PlayAttack1();
     }
 
-    
+    public override void Die()
+    {
+        SA.PlayDeath();
+        dead = true;
+    }
+
+    public void DestroySelf()
+    {
+        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
+    }
 }

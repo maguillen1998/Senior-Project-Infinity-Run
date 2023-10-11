@@ -57,6 +57,9 @@ public class Skeleton_Movement : MonoBehaviour
         r2d.freezeRotation = true;
 
         Stats = gameObject.GetComponent<Skeleton_Stats>();
+
+        //face left
+        GetComponent<SpriteRenderer>().flipX = true;
     }
 
     // Update is called once per frame

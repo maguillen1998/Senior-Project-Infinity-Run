@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//not in use. simply used once during development to test the skeleton
 public interface Base_Monster_Animation_Script_Interface
 {//work in progess interface
     void PlayIdle();
@@ -96,7 +97,7 @@ public abstract class Base_Monster_Animation_Script : MonoBehaviour, Base_Monste
     public void PlayDeath()
     {
         Anim.Play(Death);
-
+        Destroy(this);
     }
 
     public void PlayTakeHit()
