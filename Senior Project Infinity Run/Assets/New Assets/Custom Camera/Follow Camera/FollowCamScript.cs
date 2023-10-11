@@ -7,6 +7,7 @@ public class FollowCamScript : MonoBehaviour
     public GameObject Target;
     public Vector3 Boundries = new Vector3(5f,1f,-10f);//may want to refactor and remove assignment of z pos from this variable. z should always be -10 to avoid clipping
     public float CameraMovementSpeedMultiplier = 1f;
+    public Vector2 TargetOffsets = new Vector2(0f,0f);
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +20,24 @@ public class FollowCamScript : MonoBehaviour
         
         if(Target != null)
         {
-            AdjustCamera();
+            OffsetAdjustCamera();
         }
         else
         {
             Debug.LogError("!!!FollowCam Target Unassigned!!!");
         }
         
+    }
+    void OffsetAdjustCamera()
+    {
+        float leadAmountX = Boundries.x;
+        float leadAmountY = Boundries.y;
+
+        Vector3 direction = Target.GetComponent<Rigidbody2D>().velocity.normalized;
+        direction.z = Boundries.z;
+        Vector3 desiredPosition = new Vector3((Target.transform.position.x + direction.x * leadAmountX)+TargetOffsets.x, (Target.transform.position.y + direction.y * leadAmountY) + TargetOffsets.y , Boundries.z);
+
+        MoveCameraSmoothlyTo(desiredPosition);
     }
 
     void AdjustCamera()

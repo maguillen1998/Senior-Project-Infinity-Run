@@ -57,13 +57,16 @@ public class Skeleton_Movement : MonoBehaviour
         r2d.freezeRotation = true;
 
         Stats = gameObject.GetComponent<Skeleton_Stats>();
+
+        //face left
+        GetComponent<SpriteRenderer>().flipX = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
-        GetUserInput();
+        //gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
+        //GetUserInput();
     }
 
     void FixedUpdate()

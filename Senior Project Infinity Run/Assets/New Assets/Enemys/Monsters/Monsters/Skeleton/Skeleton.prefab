@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6312162034174389907}
   - component: {fileID: 9208999066392261426}
+  - component: {fileID: 3743788720208948827}
   m_Layer: 0
   m_Name: Attack1 Hitbox
   m_TagString: Untagged
@@ -72,6 +73,18 @@ PolygonCollider2D:
       - {x: 0.52950454, y: -0.13653347}
       - {x: 0.688505, y: -0.055054158}
   m_UseDelaunayMesh: 0
+--- !u!114 &3743788720208948827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276924769349964317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2b762cd2d7ef24293ddbe5394ee0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8663788536901220718
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +102,7 @@ GameObject:
   - component: {fileID: 5654457556117528818}
   - component: {fileID: 596288868031926566}
   - component: {fileID: -5700913118817661228}
+  - component: {fileID: 8948149578829099204}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -265,7 +279,6 @@ MonoBehaviour:
   maxSpeed: 4
   jumpForce: 6.5
   gravityScale: 1.5
-  isGrounded: 0
 --- !u!114 &-5700913118817661228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,3 +295,15 @@ MonoBehaviour:
   MaxJumps: 10
   JumpDelay: 0.25
   TimeOfLastJump: 0
+--- !u!114 &8948149578829099204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663788536901220718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6be50ecee565f4c97a028057b82815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

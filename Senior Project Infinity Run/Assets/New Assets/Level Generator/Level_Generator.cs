@@ -14,19 +14,50 @@ public class Level_Generator : MonoBehaviour
     public GameObject ReferencePlatfromWide;
     public GameObject ReferenceSpike;
     public GameObject ReferenceCoin;
+
+    public GameObject ReferenceSkeleton;
+    public GameObject ReferenceGoblin;
+    public GameObject ReferenceFlyingEye;
+    public GameObject ReferenceMushroom;
+
     public Camera MainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
         //testing methods to spawn level terrain
-        SpawnPlatformsNewest();
+        SpawnPlatformsDemo();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void SpawnPlatformsDemo()
+    {
+        int levelWidth = 1000;
+        float platformWidth = 1f;
+        for (int i = 0; i < levelWidth; i++)
+        {
+            float spawnPosition = transform.position.y;
+
+            float xPosition = transform.position.x + ((float)i * platformWidth) ; //the i value is indicitive of the current x position in the level generation
+            float yPosition = (float)spawnPosition;
+            float zPosition = transform.position.z; //set to 0 to keep withing the 2d plane of gameplay
+
+            Vector3 position = new Vector3(xPosition, yPosition, zPosition);
+            Quaternion rotation = new Quaternion();
+
+            GameObject spawningPlatform = Instantiate(ReferencePlatfromSquare, position, rotation);
+
+            if(i % 20 == 0)
+            {
+                position.y += 1f;
+                Instantiate(ReferenceSkeleton, position, rotation);
+            }
+        }
     }
 
     void SpawnPlatformsNewest()
