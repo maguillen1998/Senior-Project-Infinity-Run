@@ -59,7 +59,8 @@ public class Skeleton_Movement : MonoBehaviour
         Stats = gameObject.GetComponent<Skeleton_Stats>();
 
         //face left
-        GetComponent<SpriteRenderer>().flipX = true;
+        transform.rotation = Quaternion.Euler(0, 180f, 0);
+        //GetComponent<SpriteRenderer>().flipX = true;
     }
 
     // Update is called once per frame
@@ -117,7 +118,8 @@ public class Skeleton_Movement : MonoBehaviour
         }
         if (controls.shouldMoveLeftNextFixedUpdate)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            transform.rotation = Quaternion.Euler(0, 180f, 0);
+            //GetComponent<SpriteRenderer>().flipX = true;
             MoveMe(new Vector3(-1 * movementSpeedMultiplier, 0, 0));
         }
         if (controls.shouldMoveDownNextFixedUpdate)
@@ -126,7 +128,8 @@ public class Skeleton_Movement : MonoBehaviour
         }
         if (controls.shouldMoveRightNextFixedUpdate)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            //GetComponent<SpriteRenderer>().flipX = false;
             MoveMe(new Vector3(1 * movementSpeedMultiplier, 0, 0));
         }
 
