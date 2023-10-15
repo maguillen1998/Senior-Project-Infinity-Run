@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class Attack1_Hitbox_Behaviors : MonoBehaviour
 {
-    int AttackDamage = 2;
+    int AttackDamage = 1;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == null)
-        {
-            return;
-        }
+        Debug.Log(this.name +" Collided with " + collision.name);
         //tell object that you hit them.
-        Hit(collision.gameObject);
-    }
-    void Hit(GameObject target)
-    {
-        //getting the base monster class allows us to call the same method on any monster we hit without needing to reference the derived script directly.
-        //override on the derived class will allow it to still give us the correct gethit method even after changing it in the derived class.
-        if(target == null)
-        {//target can be null when colliding with other attack hitboxes
+        IHitHandler hitHandler = collision.gameObject.GetComponent<IHitHandler>();
+        if(hitHandler == null)
+        {
+            Debug.Log("HitHandler not found on: " + collision.name);
             return;
         }
-        target.gameObject.GetComponent<Base_Monster_Behaviors>().GetHit(AttackDamage);
+        hitHandler.HandleHit(AttackDamage);
     }
 }

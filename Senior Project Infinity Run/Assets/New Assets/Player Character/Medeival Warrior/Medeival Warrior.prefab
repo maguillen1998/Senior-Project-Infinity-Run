@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 6762921991155230627}
   - component: {fileID: 3408092070892773972}
   - component: {fileID: 3654371134247308818}
+  - component: {fileID: -236942545661517634}
   m_Layer: 0
   m_Name: Medeival Warrior
   m_TagString: Untagged
@@ -228,7 +229,6 @@ MonoBehaviour:
   maxSpeed: 4
   jumpForce: 6.5
   gravityScale: 1
-  isGrounded: 0
 --- !u!114 &6762921991155230627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,3 +282,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.2473669, y: 0.3662841}
   m_Direction: 0
+--- !u!114 &-236942545661517634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729407286110883716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541aae84f564093468c54a4798189796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
