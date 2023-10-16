@@ -110,16 +110,20 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
     public void PlayFall()
     {
         Anim.Play(Fall);
-
     }
 
-    void UpdateAnimations()
+    public void UpdateAnimations()
     {
+        if(GetComponent<Medieval_Warrior_Stats>().CurrentHealth <= 0)
+        {
+            PlayDeath();
+            return;
+        }
+
         if (Input.GetKey("space"))
         {
             PlayAttack1();              
         }
-
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName(Attack1))
         {//return to allow the attack animation to finish
             return;
@@ -144,6 +148,10 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
         {
             PlayRun();
         }
-       
+    }
+
+    void TellGameManagerToEndGame()
+    {
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<Game_State_Manager>().EndGame();
     }
 }

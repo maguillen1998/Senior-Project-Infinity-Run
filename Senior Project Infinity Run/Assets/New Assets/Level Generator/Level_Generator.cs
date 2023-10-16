@@ -37,7 +37,7 @@ public class Level_Generator : MonoBehaviour
 
     void SpawnPlatformsDemo()
     {
-        int levelWidth = 1000;
+        int levelWidth = 10000;
         float platformWidth = 1f;
         for (int i = 0; i < levelWidth; i++)
         {
@@ -52,10 +52,43 @@ public class Level_Generator : MonoBehaviour
 
             GameObject spawningPlatform = Instantiate(ReferencePlatfromSquare, position, rotation);
 
-            if(i % 20 == 0)
+
+            int bufferZone = 20;
+            if(i <= bufferZone)
             {
-                position.y += 1f;
-                Instantiate(ReferenceSkeleton, position, rotation);
+                continue;
+            }
+            //place skeletons
+            int skeletonSeparation = 100;
+            int skeletonPlacementChance = 75;
+            if(i % skeletonSeparation == 0 && Random.Range(1, 100 + 1) <= skeletonPlacementChance)
+            {
+                Vector3 skeletonPosition = position;
+                Quaternion skeletonRotation = rotation;
+                skeletonPosition.y += 1f;
+                Instantiate(ReferenceSkeleton, skeletonPosition, skeletonRotation);
+            }
+
+            //place coins
+            int coinSeparation = 10;
+            int coinPlacementChance = 50;
+            if (i % coinSeparation == 0 && Random.Range(1,100+1) <= coinPlacementChance)
+            {
+                Vector3 coinPosition = position;
+                Quaternion coinRotation = rotation;
+                coinPosition.y += Random.Range(1, 5 + 1);
+                Instantiate(ReferenceCoin, coinPosition, coinRotation);
+            }
+
+            //place spikes
+            int spikeSeparation = 10;
+            int spikePlacementChance = 50;
+            if (i % spikeSeparation == 0 && Random.Range(1, 100 + 1) <= spikePlacementChance)
+            {
+                Vector3 spikePosition = position;
+                Quaternion spikeRotation = rotation;
+                spikePosition.y += Random.Range(1, 5 + 1);
+                Instantiate(ReferenceSpike, spikePosition, spikeRotation);
             }
         }
     }

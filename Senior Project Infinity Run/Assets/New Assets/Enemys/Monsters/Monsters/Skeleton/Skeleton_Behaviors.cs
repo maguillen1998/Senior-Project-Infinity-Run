@@ -15,8 +15,7 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     {
         SA = GetComponent<Skeleton_Animation>();
         SM = GetComponent<Skeleton_Movement>();
-        MaxHealth = 1;
-        CurrentHealth = MaxHealth;
+
     }
 
     // Update is called once per frame
@@ -26,7 +25,8 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
        
         if(CurrentHealth <= 0)
         {
-            Die();
+            //Die();
+            return;
         }
         if(!dead && Time.realtimeSinceStartup - TimeOfLastAttack > AttackDelaySeconds)
         {
@@ -43,7 +43,7 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     public override void Die()
     {
         SA.PlayDeath();
-        dead = true;
+        //dead = true;
     }
 
     public void DestroySelf()

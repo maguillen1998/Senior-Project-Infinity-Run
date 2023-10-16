@@ -19,10 +19,10 @@ public class Spikebehaviors : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if colliding with the PC, spikes deal 1HP damage to the PC
-        if (collision.gameObject.tag == "Player Character")
-        {
-            collision.gameObject.GetComponent<Player_Character_Stats>().HealthPoints -= 1;
-            Debug.Log("PC touched Spike. HealthPoints: " + collision.gameObject.GetComponent<Player_Character_Stats>().HealthPoints);
-        }
+
+        IHitHandler hitHandler = collision.gameObject.GetComponent<IHitHandler>();
+        hitHandler.HandleHit(1);
+        //Debug.Log("PC touched Spike. HealthPoints: " + collision.gameObject.GetComponent<Player_Character_Stats>().HealthPoints);
+        
     }
 }
