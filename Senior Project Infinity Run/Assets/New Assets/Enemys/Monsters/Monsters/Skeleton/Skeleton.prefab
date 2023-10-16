@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682f31fcf3dcdf2419e42d02ec20b251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 0
-  CurrentHealth: 0
+  MaxHealth: 1
+  CurrentHealth: 1
 --- !u!114 &7683671417866527318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,10 +292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c88bedaa6ce3d48ae8c9eb4cacb003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpsSinceGrounded: 0
   MaxJumps: 10
   JumpDelay: 0.25
-  TimeOfLastJump: 0
+  MaxHealth: 1
 --- !u!114 &8948149578829099204
 MonoBehaviour:
   m_ObjectHideFlags: 0

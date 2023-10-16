@@ -227,8 +227,8 @@ MonoBehaviour:
   acceleration: 0.5
   decceleration: 3
   maxSpeed: 4
-  jumpForce: 6.5
-  gravityScale: 1
+  jumpForce: 10
+  gravityScale: 2
 --- !u!114 &6762921991155230627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,10 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a20234b648fbf49b5308e569adda60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpsSinceGrounded: 0
-  MaxJumps: 10
+  MaxJumps: 2
   JumpDelay: 0.25
-  TimeOfLastJump: 0
+  MaxHealth: 1
 --- !u!50 &3408092070892773972
 Rigidbody2D:
   serializedVersion: 4

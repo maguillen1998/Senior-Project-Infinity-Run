@@ -97,7 +97,7 @@ public abstract class Base_Monster_Animation_Script : MonoBehaviour, Base_Monste
     public void PlayDeath()
     {
         Anim.Play(Death);
-        Destroy(this);
+        //Destroy(this);
     }
 
     public void PlayTakeHit()
@@ -124,6 +124,11 @@ public abstract class Base_Monster_Animation_Script : MonoBehaviour, Base_Monste
 
     void UpdateAnimations()
     {
+        if(GetComponent<Skeleton_Behaviors>().CurrentHealth <= 0)
+        {
+            PlayDeath();
+            return;
+        }
         if (Input.GetKey("space"))
         {
             PlayAttack1();

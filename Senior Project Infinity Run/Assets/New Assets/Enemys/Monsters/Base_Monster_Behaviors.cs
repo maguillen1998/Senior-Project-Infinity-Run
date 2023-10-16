@@ -9,25 +9,24 @@ public interface IMonster
     void Die();
 }
 
-public abstract class Base_Monster_Behaviors : MonoBehaviour, IMonster
+public abstract class Base_Monster_Behaviors : MonoBehaviour, IHitHandler
 {
-    public int MaxHealth;
+    public int MaxHealth = 1;
     public int CurrentHealth;
 
     public virtual void Start()
     {
-        Debug.Log("abstract start");
-        MaxHealth = 10;       
+        //Debug.Log("abstract start");    
         CurrentHealth = MaxHealth;
     }
     public virtual void GetHit(int damage)
     {
-        TakeDamage(damage);
+        HandleHit(damage);
     }
-    public virtual void TakeDamage(int damageAmount)
+    public virtual void HandleHit(int damageAmount)
     {
         CurrentHealth -= damageAmount;
-        Debug.Log("I got hit. HP= " + CurrentHealth);
+        Debug.Log(this.name +" got hit. HP= " + CurrentHealth);
         if (CurrentHealth <= 0)
         {
             Die();
@@ -36,12 +35,10 @@ public abstract class Base_Monster_Behaviors : MonoBehaviour, IMonster
 
     public virtual void Die()
     {
-        Debug.Log("I Died and will be destroyed: " + gameObject.name);
+        Debug.Log(" Died and will be destroyed: " + gameObject.name);
 
         
         gameObject.SetActive(false);
         Destroy(gameObject);
-
-
     }
 }
