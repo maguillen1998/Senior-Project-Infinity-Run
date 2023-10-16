@@ -11,6 +11,9 @@ public class Medieval_Warrior_Stats : MonoBehaviour
     [System.NonSerializedAttribute]
     public float TimeOfLastJump = 0;
 
+    [System.NonSerializedAttribute]
+    public int CoinsCollected = 0;
+
     public int MaxHealth = 1;
 
     [System.NonSerializedAttribute]

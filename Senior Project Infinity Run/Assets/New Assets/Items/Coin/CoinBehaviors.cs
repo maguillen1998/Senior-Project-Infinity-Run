@@ -17,12 +17,11 @@ public class CoinBehaviors : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if colliding with the PC, coins increment the PC coin counter
-        if (collision.gameObject.tag == "Player Character")
-        {
-            collision.gameObject.GetComponent<Player_Character_Stats>().CoinsCollected += 1;
-            Destroy(this.gameObject);
-            Debug.Log("PC touched Coin. CoinsCollected: " + collision.gameObject.GetComponent<Player_Character_Stats>().CoinsCollected);
-        }
+
+        //convert this into a more universal script using an interface
+        collision.gameObject.GetComponent<Medieval_Warrior_Stats>().CoinsCollected += 1;
+        Destroy(this.gameObject);
+        Debug.Log("PC touched Coin. CoinsCollected: " + collision.gameObject.GetComponent<Medieval_Warrior_Stats>().CoinsCollected);
     }
+    
 }

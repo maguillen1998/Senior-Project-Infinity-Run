@@ -128,6 +128,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4302278203754363465, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
@@ -179,64 +180,67 @@ PrefabInstance:
       value: Platform (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
---- !u!1001 &768600450
+--- !u!1001 &632609870
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
-      propertyPath: m_Name
-      value: CharacterRobotBoy 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.821875
+      value: -9.389878
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0332558
+      value: -2.1197565
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    - target: {fileID: 3278119380877314449, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
+      propertyPath: m_Name
+      value: Medeival Warrior
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e7e7a8e5fa6422740801a3c8bb6fd813, type: 3}
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
 --- !u!1 &788890635
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +330,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4302278203754363465, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
@@ -381,12 +386,14 @@ PrefabInstance:
       value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b877f28b7f823647ba99730dd0e6d1e, type: 3}
 --- !u!1001 &2139698622
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 421480931190829124, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
@@ -450,4 +457,5 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
