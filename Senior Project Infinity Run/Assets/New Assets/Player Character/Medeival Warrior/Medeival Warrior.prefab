@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxJumps: 2
   JumpDelay: 0.25
-  MaxHealth: 1
+  MaxHealth: 3
 --- !u!50 &3408092070892773972
 Rigidbody2D:
   serializedVersion: 4

@@ -14,5 +14,6 @@ public class Coin_UI_Script : MonoBehaviour
     void Update()
     {
         
+    
     }
 }
