@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Post_Menu_Behaviors : MonoBehaviour
 {
-    string RootScenename = "Scene Test Level Generation";
+    //hardcoded, will break if scene name changes
+    string RootScenename = "(Main Game)Scene Test Level Generation";
     //NOTE: Marco here, I moved this scrip from the Canvas gameobject into it's own gameobject called Menu Functions
     public void RetryGame()
     {
