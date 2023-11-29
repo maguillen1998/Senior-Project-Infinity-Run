@@ -137,6 +137,7 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
         if (r2d.velocity.y < -1)
         {
             PlayFall();
+            return;
         }
 
         if (r2d.velocity.y > 1)

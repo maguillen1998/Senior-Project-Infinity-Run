@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class NewLevelGeneratorScript : MonoBehaviour
 {
+    public GameObject EmptySegment;
+
     public GameObject EasyASegment;
     public GameObject EasyBSegment;
     public GameObject EasyCSegment;
     public GameObject EasyDSegment;
 
     float LevelSegmentWidth = 10f;
+    int NumEmptySegments = 3; //amount of empty segments that will be placed at the start
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +34,18 @@ public class NewLevelGeneratorScript : MonoBehaviour
             Vector3 position = new Vector3(xPosition, yPosition, zPosition);
             Quaternion rotation = new Quaternion();
 
+            GameObject chosenSegment;
 
-            GameObject chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
+            
+            if (i <= NumEmptySegments)
+            {
+                chosenSegment = EmptySegment;
+            }
+            else
+            {
+                chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
+            }
+            
             GameObject spawningPlatform = Instantiate(chosenSegment, position, rotation);
         }
     }

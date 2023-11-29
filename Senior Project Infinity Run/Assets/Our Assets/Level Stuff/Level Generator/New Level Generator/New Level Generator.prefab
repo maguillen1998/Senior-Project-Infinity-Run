@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24db20bda69f0c41abfa85d370141db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EmptySegment: {fileID: 2960372588326212396, guid: a743ca625f2d29645a8c9951c1577c67, type: 3}
   EasyASegment: {fileID: 8195495889636786225, guid: e287ef5d2dfa574429db9395940a78e6, type: 3}
   EasyBSegment: {fileID: 8595206973191766118, guid: 0cfe33e8ccd69f14fa1ab5818d69f7e8, type: 3}
   EasyCSegment: {fileID: 7721071411398488094, guid: e101f36935e514649bd917c347ba16f2, type: 3}
