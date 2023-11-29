@@ -67,7 +67,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
+        //gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
         GetUserInput();
     }
 
