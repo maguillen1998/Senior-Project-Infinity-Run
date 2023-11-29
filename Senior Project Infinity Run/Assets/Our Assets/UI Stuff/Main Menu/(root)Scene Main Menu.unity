@@ -128,6 +128,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1639805025308260946, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
@@ -178,5 +179,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 276.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 276.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 276.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924250574936192918, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a662082d6ba2f2547a75890a12d374e9, type: 3}
