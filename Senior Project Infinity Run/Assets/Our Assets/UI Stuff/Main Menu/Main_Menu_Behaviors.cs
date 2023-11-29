@@ -7,8 +7,9 @@ public class Main_Menu_Behaviors : MonoBehaviour
 {
     //NOTE: Marco here, I moved this scrip from the Canvas gameobject into it's own gameobject called Menu Functions
    public void PlayGame()
-    {        
-        SceneManager.LoadScene("Scene Test Level Generation");
+    {   
+        //hardcoded, will break if scene name changes
+        SceneManager.LoadScene("(main game)Scene Test Level Generation");
     }
    public void GoToOptions()
     {
