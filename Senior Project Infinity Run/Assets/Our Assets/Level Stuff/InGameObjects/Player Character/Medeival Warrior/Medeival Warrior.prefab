@@ -226,9 +226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 0.5
   decceleration: 3
-  maxSpeed: 4
-  jumpForce: 10
-  gravityScale: 2
+  maxSpeed: 5
+  jumpForce: 13
+  gravityScale: 1.8
 --- !u!114 &6762921991155230627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxJumps: 2
   JumpDelay: 0.25
-  MaxHealth: 3
+  MaxHealth: 1
 --- !u!50 &3408092070892773972
 Rigidbody2D:
   serializedVersion: 4
@@ -260,10 +260,10 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 75d35a6730e4d30479612e7b69ccd01a, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!70 &3654371134247308818
 CapsuleCollider2D:

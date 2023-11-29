@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Our Assets/Level Stuff/Level Generator/(main game)Scene Test Level
-      Generation.unity
+    path: Assets/Our Assets/Level Stuff/Level Generator/Basic Level Generator/(main
+      game)Scene Test Level Generation.unity
     guid: 72fd09596863abe47ac6ae7487b9bc42
   m_configObjects: {}
