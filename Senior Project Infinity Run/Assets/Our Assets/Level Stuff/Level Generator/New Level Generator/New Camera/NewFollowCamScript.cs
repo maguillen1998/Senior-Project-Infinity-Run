@@ -20,7 +20,7 @@ public class NewFollowCamScript : MonoBehaviour
 
         if (Target != null)
         {
-            AdjustCamera();
+            OffsetAdjustCamera();
         }
         else
         {
