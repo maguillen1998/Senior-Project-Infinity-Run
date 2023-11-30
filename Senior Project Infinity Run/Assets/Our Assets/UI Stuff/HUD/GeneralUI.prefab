@@ -149,10 +149,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2610259527037787563, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
-      propertyPath: m_text
-      value: 0.00s
-      objectReference: {fileID: 0}
     - target: {fileID: 8556892369802394289, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
       propertyPath: m_Name
       value: TimerUI

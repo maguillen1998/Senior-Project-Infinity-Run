@@ -9,7 +9,7 @@ public class Main_Menu_Behaviors : MonoBehaviour
    public void PlayGame()
     {   
         //hardcoded, will break if scene name changes
-        SceneManager.LoadScene("(main game)Scene Test Level Generation");
+        SceneManager.LoadScene("(New main game)Scene Test Level Generation 1");
     }
    public void GoToOptions()
     {
