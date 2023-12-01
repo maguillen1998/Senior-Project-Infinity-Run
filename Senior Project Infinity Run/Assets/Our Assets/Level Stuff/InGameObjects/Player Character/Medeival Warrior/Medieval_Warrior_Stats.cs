@@ -10,6 +10,7 @@ public class Medieval_Warrior_Stats : MonoBehaviour
     public float JumpDelay = 0.25f;
     [System.NonSerializedAttribute]
     public float TimeOfLastJump = 0;
+    public float MaxJumpDuration = 0.3f;
 
     [System.NonSerializedAttribute]
     public int CoinsCollected = 0;
@@ -21,7 +22,7 @@ public class Medieval_Warrior_Stats : MonoBehaviour
 
     public float TimeSinceLastJump()
     {
-        return Time.fixedTime - TimeOfLastJump;
+        return Time.timeSinceLevelLoad - TimeOfLastJump;
     }
 
     private void Start()

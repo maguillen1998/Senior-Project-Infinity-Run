@@ -63,13 +63,14 @@ public class NewLevelGeneratorScript : MonoBehaviour
             {
                 chosenSegment = EmptySegment;
             }
-            else if(i <= 25)
+            else if(i <= 0)
             {
                 chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
             }
-            else if (i <= 50)
+            else if (i <= 1000)
             {
                 chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
+                //chosenSegment = MediumSegments[0];//cieling is not inclusive.
             }
             else
             {
