@@ -41,6 +41,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 3235018519875663251}
     m_Modifications:
+    - target: {fileID: 2131476025, guid: c1c11506c56ea094e86031e8de512ca0, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1639805025308260946, guid: c1c11506c56ea094e86031e8de512ca0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -148,6 +152,14 @@ PrefabInstance:
     - target: {fileID: 1799566491121163711, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546157757335005877, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546157757335005877, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8556892369802394289, guid: 682081f2aca9fb44dae02a213687243d, type: 3}
       propertyPath: m_Name
