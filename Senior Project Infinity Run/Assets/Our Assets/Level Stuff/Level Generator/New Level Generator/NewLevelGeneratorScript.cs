@@ -28,6 +28,8 @@ public class NewLevelGeneratorScript : MonoBehaviour
     GameObject[] MediumSegments;
     GameObject[] HardSegments;
 
+    GameObject[] SegmentPool;//coul be useful for making version where harder segments get added to placement pool and any difficulty unlocked can be placed.
+
     float LevelSegmentWidth = 10f;//width of each segment in units
     public int NumEmptySegments = 3; //amount of empty segments that will be placed at the start
     // Start is called before the first frame update
@@ -93,7 +95,7 @@ public class NewLevelGeneratorScript : MonoBehaviour
 
             GameObject chosenSegment;
 
-
+            //this version places only from a given category at a time.
             if (Time.timeSinceLevelLoad <= 1)
             {
                 chosenSegment = EmptySegment;
