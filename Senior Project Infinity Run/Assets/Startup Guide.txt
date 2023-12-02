@@ -1,0 +1,29 @@
+Currently, to run the most recent version of the game, navigate to the main menu scene located at: Assets/Our Assets/UI Stuff/Main Menu/(root)Scene Main Menu.unity
+
+run that scene to begin.
+
+
+---------file heirarchy info
+
+1) __archive__ 
+	this folder holds old assets that are no longer used.
+
+2) Level Stuff
+	this folder contains 2 subfolders
+	2a)InGameObjects
+		this folder contains folders with all of the assets, prefabs, etc... used for objects that appear within the game space.
+		this is stuff like items, the Player Character, the game camera, terrain, backgrounds, etc...
+	2b)Level Generator
+		this folder contains the level generators used to create the level layout.
+		2ba)Basic Level Generator
+			old version, not used anymore. basic and created whole level at once, finite
+		2bc)New Level Generator	
+			contains both the scene used to run and the scripts/prefabs for the new level generator
+			this one constructs and destroys the level dynamically as the pc moves through the level.
+			2bca)New Camera
+				experimental camera used for this new level generator within the scene
+			2bcb)Segments
+				contains prefabs for each of the 16 different level segments.
+				these are used by the new level generator to create the level dynamically.
+				
+		
