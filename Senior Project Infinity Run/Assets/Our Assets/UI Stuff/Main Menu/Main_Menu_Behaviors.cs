@@ -33,6 +33,6 @@ public class Main_Menu_Behaviors : MonoBehaviour
         Application.Quit();
 
         //exits the game on the editor
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }

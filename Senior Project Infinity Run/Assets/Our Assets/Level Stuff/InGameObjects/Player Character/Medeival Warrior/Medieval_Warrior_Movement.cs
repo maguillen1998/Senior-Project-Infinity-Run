@@ -95,6 +95,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         //for these getkeydown checks, need to set flag to true here and set it to false in applyuserinput. any resets here will cause missed inputs
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
+            this.transform.GetChild(3).GetComponent<AudioSource>().Play();//workaround solution for sfx
             controls.shouldJumpNextFixedUpdate = true;
             Stats.TimeOfLastJump = Time.timeSinceLevelLoad;
         }

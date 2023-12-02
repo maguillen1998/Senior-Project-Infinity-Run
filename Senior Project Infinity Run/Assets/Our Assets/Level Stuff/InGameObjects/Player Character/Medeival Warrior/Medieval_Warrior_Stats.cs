@@ -29,4 +29,10 @@ public class Medieval_Warrior_Stats : MonoBehaviour
     {
         CurrentHealth = MaxHealth;
     }
+
+    public void CollectCoin()
+    {
+        CoinsCollected++;
+        this.transform.GetChild(4).GetComponent<AudioSource>().Play();//play coin sfx
+    }
 }
