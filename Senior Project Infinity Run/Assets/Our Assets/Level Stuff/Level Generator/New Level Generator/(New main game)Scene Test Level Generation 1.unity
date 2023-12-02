@@ -450,6 +450,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
+      propertyPath: PC
+      value: 
+      objectReference: {fileID: 269206987}
+    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
       propertyPath: HardASegment
       value: 
       objectReference: {fileID: 2960372588326212396, guid: 635d4bcbdce8e6142a5ee2983347fbf1, type: 3}
@@ -593,9 +597,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542404962595245904, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_Name
       value: Medeival Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6762921991155230627, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
+      propertyPath: MaxJumpDuration
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
