@@ -38,6 +38,7 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     void Attack()
     {//should move into a discreet attack script later
         SA.PlayAttack1();
+        this.transform.GetChild(1).GetComponent<AudioSource>().Play();
     }
 
     public override void Die()

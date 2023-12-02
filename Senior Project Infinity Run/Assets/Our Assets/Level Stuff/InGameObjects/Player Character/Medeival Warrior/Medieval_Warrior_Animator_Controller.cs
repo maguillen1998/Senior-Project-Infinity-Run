@@ -52,6 +52,7 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
     public void PlayAttack1()
     {
         Anim.Play(Attack1);
+        this.transform.GetChild(1).GetComponent<AudioSource>().Play();
     }
     
     public void ResetAttack()
