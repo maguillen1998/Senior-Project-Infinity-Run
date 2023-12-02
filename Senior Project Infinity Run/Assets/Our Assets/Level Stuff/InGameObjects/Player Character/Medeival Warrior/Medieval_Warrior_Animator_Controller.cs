@@ -86,10 +86,19 @@ public class Medieval_Warrior_Animator_Controller : MonoBehaviour
 
     public void PlayDeath()
     {
-        Anim.Play(Death);
-
+        Anim.Play(Death);       
     }
 
+    public void SFXDeath()
+    {
+        //hardcoded as 2nd child
+        this.transform.GetChild(2).GetComponent<AudioSource>().Play();
+    }
+
+    public void SFXJump()
+    {
+        this.transform.GetChild(3).GetComponent<AudioSource>().Play();
+    }
     public void PlayTakeHit()
     {
         Anim.Play(Take_Hit);

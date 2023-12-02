@@ -2374,6 +2374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1579873711891341921, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3804058585704646739, guid: 6a4effcb54e2ccb4d94b21f74f2478de, type: 3}
       propertyPath: m_RootOrder
       value: -1

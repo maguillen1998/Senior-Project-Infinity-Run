@@ -44,6 +44,7 @@ public class Skeleton_Behaviors : Base_Monster_Behaviors
     public override void Die()
     {
         SA.PlayDeath();
+        this.transform.GetChild(2).GetComponent<AudioSource>().Play();
         //dead = true;
     }
 
