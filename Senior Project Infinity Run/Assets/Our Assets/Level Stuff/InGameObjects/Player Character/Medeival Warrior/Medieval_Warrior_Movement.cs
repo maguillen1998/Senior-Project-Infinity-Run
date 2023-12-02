@@ -50,6 +50,10 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     [System.NonSerialized]
     public bool isGrounded = false;
+
+   
+    
+    //reuse jump force above
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +71,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity from editor
+        //gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;//update gravity live from editor
         GetUserInput();
     }
 
@@ -92,6 +96,7 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (Input.GetKeyDown(UpKey))//testing change to keydown
         {
             controls.shouldJumpNextFixedUpdate = true;
+            Stats.TimeOfLastJump = Time.timeSinceLevelLoad;
         }
 
         //for these getkey checks, we need to set reset each boolean before assinging them again.
@@ -121,11 +126,16 @@ public class Medieval_Warrior_Movement : MonoBehaviour
         if (controls.shouldJumpNextFixedUpdate)
         {
             //jumping
-            if (Stats.JumpsSinceGrounded < Stats.MaxJumps && Stats.TimeSinceLastJump() > Stats.JumpDelay)
+            if (Input.GetKey(UpKey) == false)
             {
+                controls.shouldJumpNextFixedUpdate = false;
+                Stats.JumpsSinceGrounded += 1;
+            }
+            if (Stats.JumpsSinceGrounded < Stats.MaxJumps && Stats.TimeSinceLastJump() < Stats.MaxJumpDuration)
+            {              
                 Jump();
             }
-            controls.shouldJumpNextFixedUpdate = false;
+                      
         }
         if (controls.shouldMoveLeftNextFixedUpdate)
         {
@@ -214,10 +224,9 @@ public class Medieval_Warrior_Movement : MonoBehaviour
 
     void Jump()
     {
-        Stats.JumpsSinceGrounded += 1;
+        
         Rigidbody2D r2d = gameObject.GetComponent<Rigidbody2D>();
         r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
-        Stats.TimeOfLastJump = Time.fixedTime;
 
         isGrounded = false;
     }

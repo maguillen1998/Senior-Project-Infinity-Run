@@ -58,7 +58,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.78012, y: 1.0851041}
+    - - {x: 1.7225693, y: 1.180259}
+      - {x: 0.8170825, y: 1.2452745}
       - {x: 0.09723222, y: 1.313612}
       - {x: -1.0467631, y: 1.3922}
       - {x: -2.4858673, y: 1.2294494}
@@ -69,11 +70,12 @@ PolygonCollider2D:
       - {x: 0.60834074, y: 0.29656345}
       - {x: 0.3396873, y: 0.09625696}
       - {x: -0.40339315, y: -0.21328902}
-      - {x: 0.28992128, y: -0.766465}
-      - {x: 0.98934114, y: -0.61987543}
-      - {x: 1.4133846, y: -0.2488948}
-      - {x: 1.6658334, y: 0.09938879}
-      - {x: 1.6035206, y: 0.52177715}
+      - {x: -0.16594839, y: -1.1853724}
+      - {x: 0.9400581, y: -1.1866323}
+      - {x: 1.8202285, y: -1.1825256}
+      - {x: 2.275841, y: -1.1729548}
+      - {x: 2.2818742, y: -0.14702715}
+      - {x: 2.2811651, y: 0.81747633}
   m_UseDelaunayMesh: 0
 --- !u!114 &690847910957249188
 MonoBehaviour:
@@ -106,7 +108,7 @@ GameObject:
   - component: {fileID: -236942545661517634}
   m_Layer: 0
   m_Name: Medeival Warrior
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +229,7 @@ MonoBehaviour:
   acceleration: 0.5
   decceleration: 3
   maxSpeed: 6
-  jumpForce: 17
+  jumpForce: 10
   gravityScale: 3
 --- !u!114 &6762921991155230627
 MonoBehaviour:
@@ -243,6 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxJumps: 2
   JumpDelay: 0.25
+  MaxJumpDuration: 0.4
   MaxHealth: 1
 --- !u!50 &3408092070892773972
 Rigidbody2D:
@@ -261,7 +264,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 75d35a6730e4d30479612e7b69ccd01a, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0

@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-2496841328590759186
 MonoBehaviour:
@@ -44,8 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24db20bda69f0c41abfa85d370141db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PC: {fileID: 0}
   EmptySegment: {fileID: 2960372588326212396, guid: a743ca625f2d29645a8c9951c1577c67, type: 3}
   EasyASegment: {fileID: 8195495889636786225, guid: e287ef5d2dfa574429db9395940a78e6, type: 3}
   EasyBSegment: {fileID: 8595206973191766118, guid: 0cfe33e8ccd69f14fa1ab5818d69f7e8, type: 3}
   EasyCSegment: {fileID: 7721071411398488094, guid: e101f36935e514649bd917c347ba16f2, type: 3}
   EasyDSegment: {fileID: 8883317385878220931, guid: 03fe1974af3fc8348889198f8497c9b7, type: 3}
+  MediumASegment: {fileID: 2960372588326212396, guid: 380fb16a0471d804582160407f8e3f36, type: 3}
+  MediumBSegment: {fileID: 2960372588326212396, guid: 05f90608d86242840a85c5c87ceef190, type: 3}
+  MediumCSegment: {fileID: 2960372588326212396, guid: eee19456168635e4092b6a60b4b52835, type: 3}
+  MediumDSegment: {fileID: 2960372588326212396, guid: 46c25153cf1627e408f60ef7302db7d7, type: 3}
+  HardASegment: {fileID: 2960372588326212396, guid: 635d4bcbdce8e6142a5ee2983347fbf1, type: 3}
+  HardBSegment: {fileID: 2960372588326212396, guid: 327f8968dcafa294282285a4709c61c8, type: 3}
+  HardCSegment: {fileID: 2960372588326212396, guid: 137e776b10044d84abd7d6441ff4ac49, type: 3}
+  HardDSegment: {fileID: 2960372588326212396, guid: 42771c0e9fded9148b4a83cc8f7430d3, type: 3}
+  NumEmptySegments: 3
