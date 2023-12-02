@@ -105,13 +105,11 @@ public class NewLevelGeneratorScript : MonoBehaviour
             }
             else if (Time.timeSinceLevelLoad <= 50)
             {
-                chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
-                //chosenSegment = MediumSegments[0];//cieling is not inclusive.
+                chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
             }
             else
             {
-                chosenSegment = HardSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
-
+                chosenSegment = HardSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
             }
 
             GameObject spawningPlatform = Instantiate(chosenSegment, position, rotation, this.transform);
