@@ -453,42 +453,6 @@ PrefabInstance:
       propertyPath: PC
       value: 
       objectReference: {fileID: 269206987}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: HardASegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 635d4bcbdce8e6142a5ee2983347fbf1, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: HardBSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 327f8968dcafa294282285a4709c61c8, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: HardCSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 137e776b10044d84abd7d6441ff4ac49, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: HardDSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 42771c0e9fded9148b4a83cc8f7430d3, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: MediumASegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 380fb16a0471d804582160407f8e3f36, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: MediumBSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 05f90608d86242840a85c5c87ceef190, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: MediumCSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: eee19456168635e4092b6a60b4b52835, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: MediumDSegment
-      value: 
-      objectReference: {fileID: 2960372588326212396, guid: 46c25153cf1627e408f60ef7302db7d7, type: 3}
-    - target: {fileID: -2496841328590759186, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
-      propertyPath: NumEmptySegments
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4708937510000142, guid: 1ee0e4eaef2f90b4089777919391a12a, type: 3}
       propertyPath: m_Name
       value: New Level Generator
@@ -597,21 +561,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3542404962595245904, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
       propertyPath: m_Name
       value: Medeival Warrior
-      objectReference: {fileID: 0}
-    - target: {fileID: 5729407286110883716, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762921991155230627, guid: cdd33d950b06e844fafe4b48c351d31f, type: 3}
-      propertyPath: MaxJumpDuration
-      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

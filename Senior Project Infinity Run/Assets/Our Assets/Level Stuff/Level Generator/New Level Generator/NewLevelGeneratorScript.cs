@@ -75,13 +75,12 @@ public class NewLevelGeneratorScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //check if last segment is too close, if so, instantiate a new segment ahead of the player
         GameObject lastSegment;
         float lastSegmentDistance;
         
         lastSegment = this.transform.GetChild(this.transform.childCount - 1).gameObject;
-        lastSegmentDistance = lastSegment.transform.position.x - PC.transform.position.x;
-        
-        
+        lastSegmentDistance = lastSegment.transform.position.x - PC.transform.position.x;                
         
         if (lastSegmentDistance <= 20f)
         {
@@ -103,7 +102,7 @@ public class NewLevelGeneratorScript : MonoBehaviour
             {
                 chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
             }
-            else if (Time.timeSinceLevelLoad <= 50)
+            else if (Time.timeSinceLevelLoad <= 40)
             {
                 chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
             }
@@ -115,6 +114,7 @@ public class NewLevelGeneratorScript : MonoBehaviour
             GameObject spawningPlatform = Instantiate(chosenSegment, position, rotation, this.transform);
         }
 
+        //check if first segment is too far behind the player, if so, destroy it.
         GameObject firstSegment = this.transform.GetChild(0).gameObject;
         float firstSegmentDistance = firstSegment.transform.position.x - PC.transform.position.x;
 
@@ -125,7 +125,7 @@ public class NewLevelGeneratorScript : MonoBehaviour
     }
 
     void OldAlgorithm()
-    {//run in start
+    {//run in start. creates entire level at once.
         int levelWidth = 100;
         for (int i = 0; i < levelWidth; i++)
         {
