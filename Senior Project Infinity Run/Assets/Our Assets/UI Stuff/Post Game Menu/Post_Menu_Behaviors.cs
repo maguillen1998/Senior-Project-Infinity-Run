@@ -21,4 +21,9 @@ public class Post_Menu_Behaviors : MonoBehaviour
         //exits the game on the editor
         //UnityEditor.EditorApplication.isPlaying = false;
     }
+
+    public void LaunchSurvey()
+    {
+        Application.OpenURL("https://docs.google.com/forms/d/17H-KB6No1pkcpq6llogqmhUgqhn07S7n0Bylq8YYiUc/edit#settings");        
+    }
 }
