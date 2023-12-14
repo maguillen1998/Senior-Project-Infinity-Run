@@ -26,5 +26,6 @@ public class Game_State_Manager : MonoBehaviour
     void DisplayDeathScreen()
     {
         PostGameMenu.SetActive(true);
+        GameObject.FindGameObjectWithTag("HUD").SetActive(false);
     }
 }

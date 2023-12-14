@@ -26,4 +26,11 @@ public class Post_Menu_Behaviors : MonoBehaviour
     {
         Application.OpenURL("https://docs.google.com/forms/d/17H-KB6No1pkcpq6llogqmhUgqhn07S7n0Bylq8YYiUc/edit#settings");        
     }
+
+    public void CalculateScore()
+    {
+        int timeElapsed = Mathf.FloorToInt(Time.timeSinceLevelLoad);
+        int coinsCollected = GameObject.FindGameObjectWithTag("Player").GetComponent<Medieval_Warrior_Stats>().CoinsCollected;
+        int score = timeElapsed * coinsCollected;
+    }
 }
