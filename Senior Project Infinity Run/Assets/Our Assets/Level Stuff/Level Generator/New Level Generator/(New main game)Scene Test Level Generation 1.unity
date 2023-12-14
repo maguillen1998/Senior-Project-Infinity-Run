@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GeneralUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8101098530495108493, guid: cefee4506539f074d8c17a2ea9fd6fc2, type: 3}
+      propertyPath: m_TagString
+      value: HUD
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cefee4506539f074d8c17a2ea9fd6fc2, type: 3}
@@ -317,6 +321,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6465615701291091142, guid: bae81080691d2864aa54e9bada2eef30, type: 3}
+      propertyPath: orthographic size
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4497542883965518896, guid: bae81080691d2864aa54e9bada2eef30, type: 3}
       propertyPath: m_RootOrder
       value: 6

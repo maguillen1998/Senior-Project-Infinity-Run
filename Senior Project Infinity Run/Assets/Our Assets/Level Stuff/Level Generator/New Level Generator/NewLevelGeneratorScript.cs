@@ -96,23 +96,24 @@ public class NewLevelGeneratorScript : MonoBehaviour
             GameObject chosenSegment;
 
             //this version places only from a given category at a time.
-            if (Time.timeSinceLevelLoad <= 1)
-            {
-                chosenSegment = EmptySegment;
-            }
-            else if (Time.timeSinceLevelLoad <= 20)
-            {
-                chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
-            }
-            else if (Time.timeSinceLevelLoad <= 40)
-            {
-                chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
-            }
-            else
-            {
-                chosenSegment = HardSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
-            }
+            //if (Time.timeSinceLevelLoad <= 1)
+            //{
+            //    chosenSegment = EmptySegment;
+            //}
+            //else if (Time.timeSinceLevelLoad <= 20)
+            //{
+            //    chosenSegment = EasySegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.
+            //}
+            //else if (Time.timeSinceLevelLoad <= 40)
+            //{
+            //    chosenSegment = MediumSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
+            //}
+            //else
+            //{
+            //    chosenSegment = HardSegments[Random.Range(0, 3 + 1)];//cieling is not inclusive.               
+            //}
 
+            chosenSegment = EmptySegment;
             GameObject spawningPlatform = Instantiate(chosenSegment, position, rotation, this.transform);
         }
 
