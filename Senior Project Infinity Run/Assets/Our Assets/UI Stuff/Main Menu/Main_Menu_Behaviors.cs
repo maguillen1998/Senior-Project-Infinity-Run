@@ -11,6 +11,11 @@ public class Main_Menu_Behaviors : MonoBehaviour
         //hardcoded, will break if scene name changes
         SceneManager.LoadScene("(New main game)Scene Test Level Generation 1");
     }
+
+    public void LoadMainMenuScene()
+    {
+        SceneManager.LoadScene("(root)Scene Main Menu");
+    }
    public void GoToOptions()
     {
         GameObject mainMenu = this.gameObject.transform.parent.Find("Canvas/Main Menu").gameObject;
